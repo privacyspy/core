@@ -63,7 +63,7 @@
   },
   "homepage": "https://github.com/Politiwatch/privacyspy#readme",
   "devDependencies": {
-    "axios": "^0.28.1",
+    "axios": "^1.6.8",
     "jssoup": "^0.0.15",
     "prettier": "^2.2.1"
   }
