@@ -34,7 +34,6 @@
     "gulp-rename": "^2.0.0",
     "handlebars-helpers": "^0.10.0",
     "image-size": "^0.8.3",
-    "jest": "^27",
     "jest-cli": "^27",
     "lunr": "^2.3.9",
     "postcss": "^8.2.10",
