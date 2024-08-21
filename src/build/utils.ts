@@ -9,7 +9,13 @@ import { loadRubric } from "../parsing/index";
 const gulp = require("gulp");
 const rename = require("gulp-rename");
 const hb = require("gulp-hb");
-const hbHelpers = require("handlebars-helpers");
+const hbArrayHelpers = require("hbl-arrays");
+const hbCMarkHelpers = require("hbl-cmark");
+const hbCompareHelpers = require("hbl-comparison");
+const hbMathsHelpers = require("hbl-maths");
+const hbObjectHelpers = require("hbl-object");
+const hbStringHelpers = require("hbl-strings");
+const hbUrlHelpers = require("hbl-urls");
 
 const PAGE_NUMBER_PADDING = 3; // i.e.: *1* 2 3 ... 8
 
@@ -29,7 +35,13 @@ export function hbsFactory(data: object = {}) {
       }),
       ...data,
     })
-    .helpers(hbHelpers())
+    .helpers(hbArrayHelpers())
+    .helpers(hbCMarkHelpers())
+    .helpers(hbCompareHelpers())
+    .helpers(hbMathsHelpers())
+    .helpers(hbObjectHelpers())
+    .helpers(hbStringHelpers())
+    .helpers(hbUrlHelpers())
     .helpers({
       ratioColorClass,
       getMonth,
