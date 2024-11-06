@@ -1,0 +1,77 @@
+name = "Zoho Corp"
+description = "Zoho Corp is a global software company that offers a suite of cloud-based applications for business productivity, including CRM, project management, and marketing automation tools."
+slug = "zoho"
+hostnames = [ "zoho.com" ]
+sources = [ "https://www.zoho.com/privacy.html" ]
+contributors = [ "Anon-sec" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = ["Part I: \"Opt out of non-essential electronic communications... by using the ‘unsubscribe’ function.\""]
+
+[rubric.data-breaches]
+value = "eventually"
+notes = [
+  "The policy does not specify a strict timeframe for notifying users about breaches but mentions compliance with laws and regulations, suggesting eventual notification."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+notes = [
+  "The policy explicitly describes the purposes of data collection, such as using personal data for service delivery, communication, and customer support (e.g., generating invoices, sending marketing emails, etc.)."
+]
+
+[rubric.data-deletion]
+value = "yes-contact"
+notes = [
+  "The policy mentions that users can request deletion of their service data (e.g., \"request export or deletion of your service data\") and specifies a clean-up cycle for data removal from active databases (6 months)."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [
+  "We may modify the Privacy Policy at any time, upon notifying you through a service announcement or by sending an email to your primary email address"
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "Disclosures in compliance with legal obligations: We may be required by law to preserve or disclose your personal information and service data to comply with any applicable law, regulation, legal process or governmental request, including to meet national security requirements."
+]
+
+[rubric.list-collected]
+value = "generally"
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+
+[rubric.revision-notify]
+value = "yes"
+notes = [
+  "Zoho mentions that they will notify users of significant changes to the privacy policy either through an email or a prominent notice on the website, giving at least 30 days' advance notice."
+]
+
+[rubric.security]
+value = "yes"
+
+[rubric.third-party-access]
+value = "yes-unspecified-critical"
+
+[rubric.third-party-collection]
+value = "no"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
