@@ -1,0 +1,78 @@
+name = "SUMO Scheduler"
+description = "SUMO Scheduler provides online appointment, event, and course scheduling applications."
+slug = "sumo-scheduler"
+hostnames = [ "sumoscheduler.com" ]
+sources = [ "https://www.sumoscheduler.com/privacy-policy" ]
+contributors = [ "maximbelyakov" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "Yes, but you may opt-out. If you no longer wish to receive any marketing-related emails from us, you may opt-out via the unsubscribe link included in such emails."
+]
+
+[rubric.security]
+value = "yes"
+citations = [
+  "Yes. For detailed information on our data security practices, please refer to our Privacy Policy. https://sumoscheduler.com/privacy-policy/"
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "Yes, but only critical data (name, phone number, email). We collect and store content that you create, submit, post, upload, transmit, store or display in the process of using SUMO or our websites."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [
+  "Yes"
+]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "Yes, by contacting someone. If your account is managed by a System Administrator, that administrator may have control with regards to how your account information is retained and deleted. However, customers may also contact us at support@sumoscheduler.com to request the complete deletion of your personal data. We will respond to your request within 30 days."
+]
+
+[rubric.data-breaches]
+value = "eventually"
+notes = [
+  "Yes. As per SUMO's data and security policy, affected users will be notified of the nature and extent of the breach, and take steps to minimize any damage. https://sumoscheduler.com/security-policy/"
+]
+
+[rubric.third-party-access]
+value = "yes-specified-noncritical"
+citations = [
+  "No, we do not sell, trade, or otherwise transfer to outside parties your personally identifiable information."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "We collect and store content that you create, submit, post, upload, transmit, store or display in the process of using SUMO or our websites."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+citations = [
+  "Yes, but you may opt-out. If you no longer wish to receive any marketing-related emails from us, you may opt-out via the unsubscribe link included in such emails."
+]
+
+[rubric.law-enforcement]
+value = "strict"
+citations = [
+  "Only when required by a court order or subpoena. We may disclose your information, including your personal data, to a third party if (a) we believe that disclosure is reasonably necessary to comply with any applicable laws and regulation or governmental request by court order or subpoena."
+]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+  "Yes, but only critical data (name, phone number, email). We collect and store content that you create, submit, post, upload, transmit, store or display in the process of using SUMO or our websites."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "No. As per the policy, SUMO reserves the right to amend our Privacy Policy at any time to reflect changes in the law, our data collection and use practices, and the features of our Services. If we decide to change our privacy policy, we will post those changes on this page. https://sumoscheduler.com/privacy-policy/"
+]
