@@ -42,7 +42,7 @@
     "handlebars-helpers": "^0.10.0",
     "image-size": "^0.8.3",
     "is-core-module": "^2.4.0",
-    "jest": "^27",
+    "jest": "^27.5.1",
     "jest-cli": "^27",
     "jest-junit": "^11.1.0",
     "jssoup": "0.0.11",

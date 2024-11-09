@@ -52,7 +52,7 @@ notes = [
 ]
 
 [rubric.history]
-value = "revision-notify"
+value = "last-modified"
 citations = [
   "Effective Date: This Privacy Policy was last modified on 'insert date'. Note: This was captured from their privacy policy page."
 ]
