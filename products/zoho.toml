@@ -7,30 +7,54 @@ contributors = [ "Anon-sec" ]
 
 [rubric.behavioral-marketing]
 value = "yes-opt-out"
-citations = ["Part I: \"Opt out of non-essential electronic communications... by using the ‘unsubscribe’ function.\""]
+citations = [
+  "You may opt out of receiving newsletters and other non-essential messages by using the ‘unsubscribe’ function included in all such messages. However, you will continue to receive essential notices and emails such as account notification emails (password change, renewal reminders, etc.), security incident alerts, security and privacy update notifications, and essential transactional and payment-related emails.",
+  "You can disable browser cookies before visiting our websites. However, if you do so, you may not be able to use certain features of the websites properly."
+]
+notes = ["There's no way to opt-out of analytical tracking apart from disabling cookies."]
 
 [rubric.data-breaches]
-value = "eventually"
+value = "no"
+citations = [
+  "You will continue to receive essential notices and emails such as account notification emails (password change, renewal reminders, etc.), security incident alerts, security and privacy update notifications, and essential transactional and payment-related emails."
+]
 notes = [
-  "The policy does not specify a strict timeframe for notifying users about breaches but mentions compliance with laws and regulations, suggesting eventual notification."
+  "In the hopes that 'security incident alerts' are what they mean, the policy does not provide precise details regarding data breaches."
 ]
 
 [rubric.data-collection-reasoning]
 value = "yes"
+citations = [
+  "To communicate with you (such as through email) about products that you have downloaded and services that you have signed up for, changes to this Privacy Policy, changes to the Terms of Service, or important notices.",
+  "To keep you posted on new products and services, upcoming events, offers, promotions and other information that we think will be of interest to you.",
+  "To ask you to participate in surveys, or to solicit feedback on our products and services.",
+  "To set up and maintain your account, and to do all other things required for providing our services, such as enabling collaboration, providing website and mail hosting, and backing up and restoring your data.",
+  "To understand how users use our products and services, to monitor and prevent problems, and to improve our products and services.",
+  "To provide customer support, and to analyze and improve our interactions with customers.",
+  "To detect and prevent fraudulent transactions and other illegal activities, to report spam, and to protect the rights and interests of Zoho, Zoho’s users, third parties and the public.",
+  "To update, expand and analyze our records, identify new customers, and provide products and services that may be of interest to you.",
+  "To analyze trends, administer our websites, and track visitor navigations on our websites to understand what visitors are looking for and to better help them.",
+  "To monitor and improve marketing campaigns and make suggestions relevant to the user."
+]
 notes = [
   "The policy explicitly describes the purposes of data collection, such as using personal data for service delivery, communication, and customer support (e.g., generating invoices, sending marketing emails, etc.)."
 ]
 
 [rubric.data-deletion]
 value = "yes-contact"
+citations = [
+  "We hold the data in your account as long as you choose to use Zoho Services. Once you terminate your Zoho user account, your data will eventually get deleted from the active database during the next clean-up cycle that occurs once in 6 months. The data deleted from the active database will be deleted from backups after 3 months.",
+  "If you are from the European Economic Area and you believe that we store, use or process your information on behalf of one of our customers, please contact the customer if you would like to access, rectify, erase, restrict or object to processing, or export your personal data. We will extend our support to our customer in responding to your request within a reasonable timeframe.",
+  "You can contact us at privacy@zohocorp.com to request deletion of your personal data."
+]
 notes = [
-  "The policy mentions that users can request deletion of their service data (e.g., \"request export or deletion of your service data\") and specifies a clean-up cycle for data removal from active databases (6 months)."
+  "The policy mentions that users can request deletion of their service data and specifies a clean-up cycle for data removal from active databases (6 months)."
 ]
 
 [rubric.history]
-value = "last-modified"
+value = "revision-notify"
 citations = [
-  "We may modify the Privacy Policy at any time, upon notifying you through a service announcement or by sending an email to your primary email address"
+  "Effective Date: This Privacy Policy was last modified on 'insert date'. Note: This was captured from their privacy policy page."
 ]
 
 [rubric.law-enforcement]
@@ -41,37 +65,45 @@ citations = [
 
 [rubric.list-collected]
 value = "generally"
+citations = [
+  "Part I – Information Zoho Collects and Controls: 1. Information You Provide: Account Signup: Name, contact info (email, phone), company name, username, password (optional: photo, timezone, language), Event Registrations: Name, email, contact info, Payment Processing: Name, contact info, payment details (e.g., last 4 digits of credit card), Testimonials: Name and personal details (if authorized), Support Interactions: Email, phone, and chat support communications.",
+  "2. Information Collected Automatically: Device and Usage Data: IP address, browser type, device info, operating system, usage patterns, and cookies, Application Logs and Analytics: Clicks, errors, performance data, devices used.",
+  "3. Information from Third Parties: Federated Logins (Google, LinkedIn): Name, email address, Referrals: Name, email, Resellers and Service Providers: Name, email, company name, Social Media: Public profile info (name, photo, posts)."
+]
 
 [rubric.noncritical-purposes]
 value = "opt-out-some"
+citations = [
+  "You may opt out of receiving newsletters and other non-essential messages by using the ‘unsubscribe’ function included in all such messages. However, you will continue to receive essential notices and emails such as account notification emails (password change, renewal reminders, etc.), security incident alerts, security and privacy update notifications, and essential transactional and payment-related emails.",
+  "You can disable browser cookies before visiting our websites. However, if you do so, you may not be able to use certain features of the websites properly.",
+  "You can choose not to provide optional profile information such as your photo. You can also delete or change your optional profile information.",
+  "If you choose to enable any third-party integrations, you may be allowing the third party to access your service data and personal information about you."
+]
+notes = [
+  "There are no opt-out options for cookies, so you have to disable cookies, which might affect the working of the website."
+]
 
 [rubric.revision-notify]
 value = "yes"
-notes = [
-  "Zoho mentions that they will notify users of significant changes to the privacy policy either through an email or a prominent notice on the website, giving at least 30 days' advance notice."
+citations = [
+  "We may update this Privacy Policy from time to time. If there are any significant changes to the way we process your personal information, we will notify you via email or through a prominent notice on our website or through other means."
 ]
 
 [rubric.security]
 value = "yes"
+citations = [
+  "We implement reasonable security measures designed to protect the personal data that we collect and maintain. However, no data transmission over the internet or data storage system can be guaranteed to be 100% secure. While we strive to protect your personal information, you acknowledge that (i) there are security and privacy limitations inherent to the Internet which are beyond our control, and (ii) the security, integrity, and privacy of any and all information and data exchanged between you and us through our Services cannot be guaranteed."
+]
+notes = ["It emphasizes that while reasonable security measures are in place, it does not specify the inclusion of security audits as a part of those measures."]
 
 [rubric.third-party-access]
-value = "yes-unspecified-critical"
+value = "yes-unspecified"
+citations = [
+  "We may need to share your personal information and aggregated or de-identified information with third-party service providers that we engage, such as marketing and advertising partners, event organizers, web analytics providers, and payment processors. These service providers are authorized to use your personal information only as necessary to provide these services to us."
+]
 
 [rubric.third-party-collection]
-value = "no"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+value = "yes"
+citations = [
+  "Federated Authentication (e.g., Google, LinkedIn): Name, Email, Referrals: Name, Email, Partners & Service Providers: Name, Email, Company, Social Media/Public Sources: Profile info (name, photo, posts)."
+]
