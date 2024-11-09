@@ -6,7 +6,7 @@ sources = [ "https://www.zoho.com/privacy.html" ]
 contributors = [ "Anon-sec" ]
 
 [rubric.behavioral-marketing]
-value = "yes-opt-out"
+value = "yes"
 citations = [
   "You may opt out of receiving newsletters and other non-essential messages by using the ‘unsubscribe’ function included in all such messages. However, you will continue to receive essential notices and emails such as account notification emails (password change, renewal reminders, etc.), security incident alerts, security and privacy update notifications, and essential transactional and payment-related emails.",
   "You can disable browser cookies before visiting our websites. However, if you do so, you may not be able to use certain features of the websites properly."
