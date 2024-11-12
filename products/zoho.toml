@@ -36,37 +36,30 @@ citations = [
   "To analyze trends, administer our websites, and track visitor navigations on our websites to understand what visitors are looking for and to better help them.",
   "To monitor and improve marketing campaigns and make suggestions relevant to the user."
 ]
-notes = [
-  "The policy explicitly describes the purposes of data collection, such as using personal data for service delivery, communication, and customer support (e.g., generating invoices, sending marketing emails, etc.)."
-]
 
 [rubric.data-deletion]
 value = "yes-contact"
 citations = [
-  "We hold the data in your account as long as you choose to use Zoho Services. Once you terminate your Zoho user account, your data will eventually get deleted from the active database during the next clean-up cycle that occurs once in 6 months. The data deleted from the active database will be deleted from backups after 3 months.",
+  "We hold the data in your account as long as you choose to use Zoho Services. Once you terminate your Zoho user account, your data will eventually get deleted from active database during the next clean-up cycle that occurs once in 6 months. The data deleted from the active database will be deleted from backups after 3 months.",
   "If you are from the European Economic Area and you believe that we store, use or process your information on behalf of one of our customers, please contact the customer if you would like to access, rectify, erase, restrict or object to processing, or export your personal data. We will extend our support to our customer in responding to your request within a reasonable timeframe.",
-  "You can contact us at privacy@zohocorp.com to request deletion of your personal data."
-]
-notes = [
-  "The policy mentions that users can request deletion of their service data and specifies a clean-up cycle for data removal from active databases (6 months)."
 ]
 
 [rubric.history]
 value = "last-modified"
 citations = [
-  "Effective Date: This Privacy Policy was last modified on 'insert date'. Note: This was captured from their privacy policy page."
+  "Last updated on: 5th June 2023."
 ]
 
 [rubric.law-enforcement]
 value = "reasonable"
 citations = [
-  "Disclosures in compliance with legal obligations: We may be required by law to preserve or disclose your personal information and service data to comply with any applicable law, regulation, legal process or governmental request, including to meet national security requirements."
+  "We may be required by law to preserve or disclose your personal information and service data to comply with any applicable law, regulation, legal process or governmental request, including to meet national security requirements."
 ]
 
 [rubric.list-collected]
 value = "generally"
-citations = [
-  "Part I – Information Zoho Collects and Controls: 1. Information You Provide: Account Signup: Name, contact info (email, phone), company name, username, password (optional: photo, timezone, language), Event Registrations: Name, email, contact info, Payment Processing: Name, contact info, payment details (e.g., last 4 digits of credit card), Testimonials: Name and personal details (if authorized), Support Interactions: Email, phone, and chat support communications.",
+notes = [
+  "1. Information You Provide: Account Signup: Name, contact info (email, phone), company name, username, password (optional: photo, timezone, language), Event Registrations: Name, email, contact info, Payment Processing: Name, contact info, payment details (e.g., last 4 digits of credit card), Testimonials: Name and personal details (if authorized), Support Interactions: Email, phone, and chat support communications.",
   "2. Information Collected Automatically: Device and Usage Data: IP address, browser type, device info, operating system, usage patterns, and cookies, Application Logs and Analytics: Clicks, errors, performance data, devices used.",
   "3. Information from Third Parties: Federated Logins (Google, LinkedIn): Name, email address, Referrals: Name, email, Resellers and Service Providers: Name, email, company name, Social Media: Public profile info (name, photo, posts)."
 ]
@@ -79,27 +72,27 @@ citations = [
   "You can choose not to provide optional profile information such as your photo. You can also delete or change your optional profile information.",
   "If you choose to enable any third-party integrations, you may be allowing the third party to access your service data and personal information about you."
 ]
-notes = [
-  "There are no opt-out options for cookies, so you have to disable cookies, which might affect the working of the website."
-]
 
 [rubric.revision-notify]
 value = "yes"
 citations = [
-  "We may update this Privacy Policy from time to time. If there are any significant changes to the way we process your personal information, we will notify you via email or through a prominent notice on our website or through other means."
+  "We may modify the Privacy Policy at any time, upon notifying you through a service announcement or by sending an email to your primary email address. If we make significant changes to the Privacy Policy that affect your rights, you will be provided with at least 30 days' advance notice of the changes by email to your primary email address."
 ]
 
 [rubric.security]
-value = "yes"
+value = "yes-independent-audits"
 citations = [
-  "We implement reasonable security measures designed to protect the personal data that we collect and maintain. However, no data transmission over the internet or data storage system can be guaranteed to be 100% secure. While we strive to protect your personal information, you acknowledge that (i) there are security and privacy limitations inherent to the Internet which are beyond our control, and (ii) the security, integrity, and privacy of any and all information and data exchanged between you and us through our Services cannot be guaranteed."
+  "At Zoho, we take data security very seriously. That's why we have gotten certified for industry standards mentioned here. We have taken steps to implement appropriate administrative, technical & physical safeguards to prevent unauthorized access, use, modification, disclosure or destruction of the information you entrust to us."
 ]
-notes = ["It emphasizes that while reasonable security measures are in place, it does not specify the inclusion of security audits as a part of those measures."]
+notes = [
+  "A copy of a security whitepaper is linked in the policy and viewable at https://www.zoho.com/security.html",
+  "A copy of compliance certifications, including independent audits, is linked in the policy and viewable at https://www.zoho.com/compliance.html"
+]
 
 [rubric.third-party-access]
 value = "yes-unspecified"
 citations = [
-  "We may need to share your personal information and aggregated or de-identified information with third-party service providers that we engage, such as marketing and advertising partners, event organizers, web analytics providers, and payment processors. These service providers are authorized to use your personal information only as necessary to provide these services to us."
+  "We may need to share your personal information and aggregated or de-identified information with third-party service providers that we engage, such as marketing and advertising partners, event organizers, web analytics providers and payment processors. These service providers are authorized to use your personal information only as necessary to provide these services to us."
 ]
 
 [rubric.third-party-collection]
