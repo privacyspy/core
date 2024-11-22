@@ -6,9 +6,12 @@ sources = [ "https://www.sumoscheduler.com/privacy-policy" ]
 contributors = [ "maximbelyakov" ]
 
 [rubric.behavioral-marketing]
-value = "yes-opt-out"
+value = "yes"
 citations = [
-  "Yes, but you may opt-out. If you no longer wish to receive any marketing-related emails from us, you may opt-out via the unsubscribe link included in such emails."
+  "If you no longer wish to receive any marketing-related emails from us, you may opt-out via the unsubscribe link included in such emails."
+]
+notes = [
+  "The policy mentions opting out of marketing emails, but doesn't specifically address behavioral marketing or targeted advertising opt-out options beyond email communications."
 ]
 
 [rubric.security]
