@@ -8,7 +8,7 @@ contributors = [ "Anon-sec" ]
 [rubric.behavioral-marketing]
 value = "yes"
 citations = [
-  "You may opt out of receiving newsletters and other non-essential messages by using the ‘unsubscribe’ function included in all such messages. However, you will continue to receive essential notices and emails such as account notification emails (password change, renewal reminders, etc.), security incident alerts, security and privacy update notifications, and essential transactional and payment-related emails.",
+  "Opt out of non-essential electronic communications : You may opt out of receiving newsletters and other non-essential messages by using the ‘unsubscribe’ function included in all such messages. However, you will continue to receive essential notices and emails such as account notification emails (password change, renewal reminders, etc.), security incident alerts, security and privacy update notifications, and essential transactional and payment related emails.",
   "You can disable browser cookies before visiting our websites. However, if you do so, you may not be able to use certain features of the websites properly."
 ]
 notes = ["There's no way to opt-out of analytical tracking apart from disabling cookies."]
@@ -16,7 +16,7 @@ notes = ["There's no way to opt-out of analytical tracking apart from disabling 
 [rubric.data-breaches]
 value = "no"
 citations = [
-  "You will continue to receive essential notices and emails such as account notification emails (password change, renewal reminders, etc.), security incident alerts, security and privacy update notifications, and essential transactional and payment-related emails."
+  "However, you will continue to receive essential notices and emails such as account notification emails (password change, renewal reminders, etc.), security incident alerts, security and privacy update notifications, and essential transactional and payment related emails."
 ]
 notes = [
   "In the hopes that 'security incident alerts' are what they mean, the policy does not provide precise details regarding data breaches."
@@ -25,22 +25,22 @@ notes = [
 [rubric.data-collection-reasoning]
 value = "yes"
 citations = [
-  "To communicate with you (such as through email) about products that you have downloaded and services that you have signed up for, changes to this Privacy Policy, changes to the Terms of Service, or important notices.",
-  "To keep you posted on new products and services, upcoming events, offers, promotions and other information that we think will be of interest to you.",
-  "To ask you to participate in surveys, or to solicit feedback on our products and services.",
-  "To set up and maintain your account, and to do all other things required for providing our services, such as enabling collaboration, providing website and mail hosting, and backing up and restoring your data.",
-  "To understand how users use our products and services, to monitor and prevent problems, and to improve our products and services.",
-  "To provide customer support, and to analyze and improve our interactions with customers.",
-  "To detect and prevent fraudulent transactions and other illegal activities, to report spam, and to protect the rights and interests of Zoho, Zoho’s users, third parties and the public.",
-  "To update, expand and analyze our records, identify new customers, and provide products and services that may be of interest to you.",
-  "To analyze trends, administer our websites, and track visitor navigations on our websites to understand what visitors are looking for and to better help them.",
-  "To monitor and improve marketing campaigns and make suggestions relevant to the user."
+  "To communicate with you (such as through email) about products that you have downloaded and services that you have signed up for, changes to this Privacy Policy, changes to the Terms of Service, or important notices",
+  "To keep you posted on new products and services, upcoming events, offers, promotions and other information that we think will be of interest to you",
+  "To ask you to participate in surveys, or to solicit feedback on our products and services",
+  "To set up and maintain your account, and to do all other things required for providing our services, such as enabling collaboration, providing website and mail hosting, and backing up and restoring your data",
+  "To understand how users use our products and services, to monitor and prevent problems, and to improve our products and services",
+  "To provide customer support, and to analyze and improve our interactions with customers",
+  "To detect and prevent fraudulent transactions and other illegal activities, to report spam, and to protect the rights and interests of Zoho, Zoho’s users, third parties and the public",
+  "To update, expand and analyze our records, identify new customers, and provide products and services that may be of interest to you",
+  "To analyze trends, administer our websites, and track visitor navigations on our websites to understand what visitors are looking for and to better help them",
+  "To monitor and improve marketing campaigns and make suggestions relevant to the user"
 ]
 
 [rubric.data-deletion]
 value = "yes-contact"
 citations = [
-  "We hold the data in your account as long as you choose to use Zoho Services. Once you terminate your Zoho user account, your data will eventually get deleted from active database during the next clean-up cycle that occurs once in 6 months. The data deleted from the active database will be deleted from backups after 3 months.",
+  "We hold the data in your account as long as you choose to use Zoho Services. Once you terminate your Zoho user account, your data will eventually get deleted from active database during the next clean-up that occurs once in 6 months. The data deleted from active database will be deleted from backups after 3 months.",
   "If you are from the European Economic Area and you believe that we store, use or process your information on behalf of one of our customers, please contact the customer if you would like to access, rectify, erase, restrict or object to processing, or export your personal data. We will extend our support to our customer in responding to your request within a reasonable timeframe.",
 ]
 
@@ -67,7 +67,7 @@ notes = [
 [rubric.noncritical-purposes]
 value = "opt-out-some"
 citations = [
-  "You may opt out of receiving newsletters and other non-essential messages by using the ‘unsubscribe’ function included in all such messages. However, you will continue to receive essential notices and emails such as account notification emails (password change, renewal reminders, etc.), security incident alerts, security and privacy update notifications, and essential transactional and payment-related emails.",
+  "You may opt out of receiving newsletters and other non-essential messages by using the ‘unsubscribe’ function included in all such messages. However, you will continue to receive essential notices and emails such as account notification emails (password change, renewal reminders, etc.), security incident alerts, security and privacy update notifications, and essential transactional and payment related emails.",
   "You can disable browser cookies before visiting our websites. However, if you do so, you may not be able to use certain features of the websites properly.",
   "You can choose not to provide optional profile information such as your photo. You can also delete or change your optional profile information.",
   "If you choose to enable any third-party integrations, you may be allowing the third party to access your service data and personal information about you."
