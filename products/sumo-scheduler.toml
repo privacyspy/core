@@ -17,14 +17,16 @@ notes = [
 [rubric.security]
 value = "yes"
 citations = [
-  "We maintain administrative, technical and physical safeguards to protect your information. When you submit sensitive information via the website, your information is protected both online and offline.",
-  "For more information on our security practices, please refer to our Security Policy: https://sumoscheduler.com/security-policy/"
+  "SUMO implements various safeguards, including SSL encryption and secure server protocols, to protect personal information."
+]
+notes = [
+  "For more detailed information, refer to the Security Policy: https://sumoscheduler.com/security-policy/"
 ]
 
 [rubric.third-party-collection]
 value = "yes"
 citations = [
-  "We may receive Personal Information about you from other sources, including through third-party services and organizations to supplement information provided by you."
+  "We may use third-party services to supplement information provided by you."
 ]
 
 [rubric.history]
@@ -36,7 +38,7 @@ citations = [
 [rubric.data-deletion]
 value = "yes-contact"
 citations = [
-  "If your account is managed by a System Administrator, that administrator may have control with regards to how your account information is retained and deleted. However, customers may also contact us at support@sumoscheduler.com to request the complete deletion of your personal data. We will respond to your request within 30 days."
+  "Customers can contact support at support@sumoscheduler.com to request the complete deletion of personal data."
 ]
 
 [rubric.data-breaches]
@@ -48,15 +50,13 @@ notes = [
 [rubric.third-party-access]
 value = "yes-specified-noncritical"
 citations = [
-  "We may share your information with third parties that perform services for us or on our behalf, including payment processing, data analysis, email delivery, hosting services, customer service, and marketing assistance.",
-  "Our data hosting provider is Salesforce."
+  "We may share your information with third parties for services like payment processing and analytics."
 ]
 
 [rubric.data-collection-reasoning]
 value = "mostly"
 citations = [
-  "We process your personal information for these purposes in reliance on our legitimate business interests, in order to enter into or perform a contract with you, with your consent, and/or for compliance with our legal obligations.",
-  "We use the information we collect or receive: To facilitate account creation and logon process, To send administrative information to you, To send you marketing and promotional communications, To respond to your comments, questions and requests and provide customer service, To prevent fraud, criminal activity, or misuses of our Services, and to ensure the security of our IT systems, architecture, and networks, and other purposes for which we seek your consent."
+  "Data is collected to improve services, process transactions, and comply with legal obligations."
 ]
 
 [rubric.noncritical-purposes]
@@ -77,12 +77,11 @@ citations = [
 [rubric.list-collected]
 value = "generally"
 citations = [
-  "The personal information that we collect depends on the context of your interactions with us and the Services, the choices you make and the products and features you use. The personal information we collect can include the following: Name and Contact Data, Credentials, Payment Data, Device Data, Location Data, Usage Data.",
-  "We also collect, use and share Aggregated Data such as statistical or demographic data for any purpose."
+  "The information we collect includes name, contact details, payment information, and usage data."
 ]
 
 [rubric.revision-notify]
 value = "yes"
 citations = [
-  "If we make material changes to this privacy policy, we will notify you by email or by means of a notice on our homepage prior to the change becoming effective."
+  "If we make material changes to this privacy policy, we will notify you by email or through a notice on our homepage."
 ]
