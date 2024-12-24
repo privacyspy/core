@@ -15,19 +15,18 @@ notes = [
 ]
 
 [rubric.security]
-value = "yes"
+value = "somewhat"
 citations = [
-  "SUMO implements various safeguards, including SSL encryption and secure server protocols, to protect personal information."
+  "We implement a variety of security measures to maintain the safety of your personal information when you place an order or enter, submit, or access your personal data."
 ]
 notes = [
   "For more detailed information, refer to the Security Policy: https://sumoscheduler.com/security-policy/"
 ]
 
 [rubric.third-party-collection]
-value = "yes"
-citations = [
-  "We may use third-party services to supplement information provided by you."
-]
+value = "no"
+citations = []
+notes = [ "There is no mention of third-party data collection in the policy." ]
 
 [rubric.history]
 value = "last-modified"
@@ -38,25 +37,26 @@ citations = [
 [rubric.data-deletion]
 value = "yes-contact"
 citations = [
-  "Customers can contact support at support@sumoscheduler.com to request the complete deletion of personal data."
+  "If you would like to correct, update, amend, or remove personal data that you have provided to us, you may do so in your account settings or by directing your query to your System Administrator. You may also contact us at support@sumoscheduler.com to request the complete deletion of your personal data. We will respond to your request within 30 days."
 ]
 
 [rubric.data-breaches]
 value = "eventually"
-notes = [
-  "Yes. As per SUMO's data and security policy, affected users will be notified of the nature and extent of the breach, and take steps to minimize any damage. https://sumoscheduler.com/security-policy/"
+citations = [
+  "Should a security incident occur, we will notify affected users of the nature and extent of the breach, and take steps to minimize any damage. There have been no security incidents to date."
 ]
+notes = [ "Citation is from the Security Policy." ]
 
 [rubric.third-party-access]
-value = "yes-specified-noncritical"
+value = "yes-unspecified"
 citations = [
-  "We may share your information with third parties for services like payment processing and analytics."
+  "We do not sell, trade, or otherwise transfer to outside parties your personally identifiable information. This does not include trusted third parties who assist us in operating our website, conducting our business, or servicing you, so long as those parties agree to keep this information confidential. We may also release your information when we believe release is appropriate to comply with the law, enforce our site policies, or protect ours or others rights, property, or safety. However, non-personally identifiable visitor information may be provided to other parties for marketing, advertising, or other uses."
 ]
 
 [rubric.data-collection-reasoning]
 value = "mostly"
 citations = [
-  "Data is collected to improve services, process transactions, and comply with legal obligations."
+  "Any of the information we collect from you may be used in one of the following ways: To provide, operate, maintain, improve, and promote our services; To personalize your experience, including by providing content, features, or advertisements that match your interests and preferences; To send messages, including responding to your questions, comments, and requests; providing customer service and support; and sending you technical notices, updates, security alerts, and support and administrative messages To process and complete transactions – your information, whether public or private, will not be sold, exchanged, transferred, or given to any other company for any reason whatsoever, without your consent, other than for the express purpose of delivering the purchased product or service requested; To send promotional communications, such as providing you with information about services, features, surveys, newsletters, offers, promotions, contests, and events; and providing other news or information about us and our select partners. If any time you would like to unsubscribe from receiving future emails, we include detailed unsubscribe instructions at the bottom of each email; To improve our website (we continually strive to improve our website offerings based on the information and feedback we receive from you); and For other purposes about which we obtain your consent."
 ]
 
 [rubric.noncritical-purposes]
@@ -64,12 +64,9 @@ value = "opt-out-some"
 citations = [
   "If you no longer wish to receive any marketing-related emails from us, you may opt-out via the unsubscribe link included in such emails."
 ]
-notes = [
-  "You're only able to opt-out of marketing emails."
-]
 
 [rubric.law-enforcement]
-value = "strict"
+value = "reasonable"
 citations = [
   "We may disclose your information, including your personal data, to a third party if (a) we believe that disclosure is reasonably necessary to comply with any applicable laws and regulation or governmental request by court order or subpoena."
 ]
@@ -77,11 +74,15 @@ citations = [
 [rubric.list-collected]
 value = "generally"
 citations = [
-  "The information we collect includes name, contact details, payment information, and usage data."
+  "We collect information from you when you register on our site, place an order, subscribe to our newsletter, respond to a survey, fill out a form or visit us at an event.",
+  "When ordering or registering on our site, as appropriate, you may be asked to enter your: name, e-mail address, mailing address, phone number or credit card information. You may, however, visit our site anonymously.",
+  "A system admin or another user may create an account on your behalf and may provide your information, including personal Information. We collect information under the direction of our customers and often have no direct relationship with the individuals whose personal information we process. If you are an employee of one of our customers and would no longer like us to process your information, please contact your employer. If you are providing information, including personal information about someone else, you must have the authority to act for them and to consent to the collection and use of their personal information.",
+  "We collect and store content that you create, submit, post, upload, transmit, store or display in the process of using SUMO or our websites. Such content may include any personal information or other sensitive information that you choose to include.",
+  "As you navigate our sites, we may also collect standard information from your Web browser through the use of commonly-used information-gathering tools. This information may include browser type and browser language preferences, your Internet Protocol (“IP”) address, the actions you take on our sites (such as the web pages viewed and the links clicked), and other content you send via the chat feature."
 ]
 
 [rubric.revision-notify]
 value = "yes"
 citations = [
-  "If we make material changes to this privacy policy, we will notify you by email or through a notice on our homepage."
+  " If we decide to change our privacy policy, We will provide notice of any changes to the Privacy Policy by posting the revised policy on this page and, if appropriate, by sending an email notification to all users."
 ]
