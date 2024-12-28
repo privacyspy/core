@@ -1,0 +1,76 @@
+name = "Verleihshop.de"
+description = “Verleihshop.de is an online rental service for movies, games and books.”
+slug = “rentalshop”
+hostnames = [ “verleihshop.de” ]
+sources = [ “https://www.verleihshop.de/datenschutz.html” ]
+contributors = [ “ErSpieltHD” ]
+
+[rubric.behavioral-marketing]
+value = “yes-opt-out”
+citations = [„Verleihshop.de uses cookies and similar technologies to analyze user behavior and provide personalized advertising. Users can object to the use of cookies, but this may affect the functionality of the website. Further information can be found in the privacy policy of Verleihshop.de.“]
+
+[rubric.security]
+value = “somewhat”
+citations = [
+  “Verleihshop.de uses technical and organizational security measures to protect personal data from loss, misuse and unauthorized access. Details of the specific measures are not mentioned in the privacy policy.“
+]
+
+[rubric.third-party-collection]
+value = “yes”
+citations = [
+  “Verleihshop.de works together with third-party providers to provide certain functions and services. Personal data may be passed on to these third-party providers. Further information can be found in the privacy policy of Verleihshop.de.“
+]
+
+[rubric.history]
+value = “last-modified”
+notes = [
+  “The date of the last update is indicated at the end of the privacy policy.”
+]
+
+[rubric.data-deletion]
+value = “yes-manual”
+citations = [
+  “Users have the right to request the deletion of their personal data. Requests for data deletion can be made using the contact information provided in the privacy policy.“
+]
+
+[rubric.data-breaches]
+value = “no”
+notes = [
+  “No information on data breaches or security incidents is mentioned in the privacy policy.”
+]
+
+[rubric.third-party-access]
+value = “yes-unspecified”
+citations = [
+  “Personal data may be passed on to third parties if this is necessary for the fulfillment of the contract or if there is a legal obligation. Details of the specific recipients are not mentioned in the privacy policy.“
+]
+
+[rubric.data-collection-reasoning]
+value = “mostly”
+notes = [
+  “The privacy policy explains the purposes of data collection, but not all types of data collected are clearly justified.”
+]
+
+[rubric.noncritical-purposes]
+value = “opt-out-some”
+citations = [
+  “Users can object to the use of their data for certain non-critical purposes, but not for all. For more information, please see the Verleihshop.de privacy policy.“
+]
+
+[rubric.law-enforcement]
+value = “reasonable”
+citations = [
+  “Verleihshop.de may disclose personal data if this is required by law or is necessary to protect legitimate interests. Further information can be found in the privacy policy of Verleihshop.de.“
+]
+
+[rubric.list-collected]
+value = “generally”
+notes = [
+  “The privacy policy lists the data collected in general, but some categories of data are not specifically mentioned.”
+]
+
+[rubric.revision-notify]
+value = “yes”
+citations = [
+  “Verleihshop.de reserves the right to change the privacy policy. Users will be informed about significant changes. Further information can be found in the privacy policy of Verleihshop.de.“
+]
