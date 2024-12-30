@@ -1,5 +1,5 @@
 name = "Verleihshop.de"
-description = "Verleihshop.de ist ein Online-Verleihservice für Filme, Spiele und Bücher."
+description = "Verleihshop.de is an online rental service for movies, games and books. (Verleihshop.de ist ein Online-Verleihservice für Filme, Spiele und Bücher.)"
 slug = "verleihshop"
 hostnames = [ "verleihshop.de" ]
 sources = [ "https://www.verleihshop.de/datenschutz.html" ]
@@ -26,7 +26,7 @@ citations = [
 [rubric.history]
 value = "last-modified"
 notes = [
-  "Das Datum der letzten Aktualisierung ist am Ende der Datenschutzerklärung angegeben."
+  "The date of the last update is indicated at the end of the privacy policy. (Das Datum der letzten Aktualisierung ist am Ende der Datenschutzerklärung angegeben.)"
 ]
 
 [rubric.data-deletion]
@@ -38,7 +38,7 @@ citations = [
 [rubric.data-breaches]
 value = "no"
 notes = [
-  "In der Datenschutzerklärung werden keine Informationen zu Datenpannen oder Sicherheitsvorfällen erwähnt."
+  "No information on data breaches or security incidents is mentioned in the privacy policy. (In der Datenschutzerklärung werden keine Informationen zu Datenpannen oder Sicherheitsvorfällen erwähnt.)"
 ]
 
 [rubric.third-party-access]
@@ -50,7 +50,7 @@ citations = [
 [rubric.data-collection-reasoning]
 value = "mostly"
 notes = [
-  "Die Datenschutzerklärung erläutert die Zwecke der Datenerhebung, jedoch werden nicht alle erhobenen Datenarten mit einer klaren Begründung versehen."
+  "The privacy policy explains the purposes of data collection, but not all types of data collected are clearly justified. (Die Datenschutzerklärung erläutert die Zwecke der Datenerhebung, jedoch werden nicht alle erhobenen Datenarten mit einer klaren Begründung versehen.)"
 ]
 
 [rubric.noncritical-purposes]
@@ -68,7 +68,7 @@ citations = [
 [rubric.list-collected]
 value = "generally"
 notes = [
-  "Die Datenschutzerklärung listet die gesammelten Daten allgemein auf, jedoch werden einige Datenkategorien nicht spezifisch erwähnt."
+  "The privacy policy lists the data collected in general, but some categories of data are not specifically mentioned. (Die Datenschutzerklärung listet die gesammelten Daten allgemein auf, jedoch werden einige Datenkategorien nicht spezifisch erwähnt.)"
 ]
 
 [rubric.revision-notify]
