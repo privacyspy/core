@@ -1,5 +1,5 @@
 name = "Kagi"
-description = "Privacy-Focused Search Engine."
+description = "Paid Ad-free Search Engine."
 slug = "kagi"
 hostnames = [ "kagi.com" ]
 sources = [ "https://kagi.com/privacy" ]
@@ -28,7 +28,7 @@ citations = [
 ]
 
 [rubric.data-deletion]
-value = "yes-contact"
+value = "yes-automated"
 citations = [
 "There is an option to delete your account."," When you do this, all information and settings related to your account is removed from our database."
 ]
