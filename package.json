@@ -47,7 +47,7 @@
     "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
     "legacy-convert": "node src/legacy/convert",
     "icons": "ts-node src/build/icons",
-    "build": "gulp"
+    "build": "npx gulp"
   },
   "repository": {
     "type": "git",
