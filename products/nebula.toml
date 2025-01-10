@@ -1,0 +1,111 @@
+name = "Nebula"
+description = "Nebula is a creator-owned video streaming platform."
+slug = "nebula"
+hostnames = [ "nebula.tv" ]
+sources = [ "https://nebula.tv/privacy" ]
+contributors = [ "ausernameisnotavailable", "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = ["We may work with third-party advertising companies and social media companies to help us advertise our business and to display ads for our products and services. These companies may use cookies and similar technologies to collect information about you ... over time across our Services and other websites and services or your interaction with our emails, and use that information to serve ads that they think will interest you."]
+
+[rubric.data-breaches]
+value = "no"
+citations = ["In the event that we are required by law to inform you of any unauthorized access or acquisition of your personal information we may notify you electronically, in writing, or by telephone, if permitted to do so by law."]
+notes = ["Although some people may be able to receive such notifications, it is not guaranteed for all users."]
+
+[rubric.data-collection-reasoning]
+value = "mostly"
+citations = [
+	"We use personal information to provide the Services and for purposes that you reasonably expect.",
+	"""
+	We may use personal information to provide our Services and operate our business. For example, we use personal information to: 
+	  - fulfill your requests for selecting and purchasing merch and subscriptions;
+      - establish, manage, monitor, and maintain your account on our Platform;
+      - improve and personalize your experience on or with the Services;
+      - verify your identity or determine your eligibility for offers and promotions;
+      - communicate with you, including providing notices about your account or transaction, and responding to any of your requests or questions;
+      - provide any surveys, contests, or promotions that you participate in;
+      - provide maintenance and support; and
+      - fulfill any other purpose for which you provide personal information.
+     """,
+     "We use personal information for research and development purposes, including to study and improve the Services and our business, understand and analyze the usage trends and preferences of our users, and develop new features, functionality, products, and services.",
+     "We may work with third-party advertising companies and social media companies to help us advertise our business and to display ads for our products and services.",
+     "We will use personal information as we believe necessary or appropriate to comply with applicable laws, lawful requests, and legal process, such as to respond to subpoenas or requests from government authorities.",
+     "We may use personal information and disclose it to law enforcement, government authorities, and private parties as we believe necessary or appropriate to: (a) maintain the safety, security, and integrity of the Services and our products and services, business, databases, and other technology assets; (b) protect our, your, or others' rights, privacy, safety or property (including by making and defending legal claims); (c) audit our internal processes for compliance with legal and contractual requirements and internal policies; (d) enforce the terms and conditions that govern the Services; and (e) prevent, identify, investigate, and deter fraudulent, harmful, unauthorized, unethical or illegal activity, including cyberattacks and identity theft.",
+     "We will disclose your personal information in accordance with your prior direction or, in some cases, we may specifically ask you for your consent to collect, use, or share your personal information, such as when required by law."
+]
+notes = ["It is unclear what they mean by providing users with a great experience."]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = ["If you wish to delete your account with us, you may do so by logging into your account and selecting \"Delete account\"."]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Last updated: August 31, 2023" ]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = ["Under certain circumstances, we may be required to disclose personal information to law enforcement, government authorities, and other parties if required to do so by law or in response to valid requests by public authorities (e.g., a court or a government agency)."]
+
+[rubric.list-collected]
+value = "generally"
+citations = [
+	"""
+	Personal information you provide to us through the Services, such as when you purchase a subscription or merchandise, contact us (including by social media), participate in an online survey, or otherwise, may include the following categories. We may also collect other personal information that is not specifically listed here, which we will use as described in this Privacy Policy or as otherwise disclosed at the time of collection.
+
+    Contact details, such as your first and last name, email and mailing addresses, and phone number.
+    Account information, such as your username (email address) and password that you set to establish an online account with us, your watch history, preferences, and other details about your use of the Services.
+    Payment and transactional data, such as the information needed to complete your merch orders and subscriptions on or through our Platform (all payment processing services connected with your use of the Platform are provided to you by our third-party payment processor), and records of merch and subscriptions you have purchased from us.
+    Marketing preferences, such as your preferences for receiving communications about Nebula content, merch, activities, events, publications, and related services, and details about how you engage with our communications.
+    Survey responses, such as the information you provide in response to our surveys, questionnaires, or contests.
+    Communications, such as the information associated with your requests or inquiries, including for support, assistance, or order information, and any feedback you provide when you communicate with us, or otherwise.
+	""",
+	"""
+	Nebula, our service providers, and our advertising partners may automatically log information about you, your computer, or mobile device, and your activity over time on our Services and other sites and online services. Personal information that may be automatically collected includes:
+
+    Device information, such as your computer or mobile device operating system type and version number, wireless carrier, manufacturer and model, device identifier (such as the Google Advertising ID or Apple ID for Advertising), browser type, screen resolution, IP address, general location information such as city, state or geographic area; and
+    Online activity information, such as information about your use of and actions on the Services, such as the website you visited before browsing to our Services, pages or screens you viewed, how long you spent on a page or screen, navigation paths between pages or screens, information about your activity on a page or screen, access times, and duration of access.
+    """,
+    "Nebula may receive personal information about you from other third-party sources, including from our service providers, data analytics partners, social media platforms, advertising partners, business partners, data providers, publicly available sources, and third party APIs. We may merge or combine such personal information with the personal information we collect from you directly or automatically."
+]
+notes = ["This is the only mentioning of what data is collected."]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+citations = [
+	"The Nebula Store uses Google Analytics to help us analyze how the Website is being accessed and used. You can learn more about Google Analytics cookies by clicking here and about how Google protects your data by clicking here. To opt-out of Google Analytics, you can download and install the Google Analytics Opt-out Browser Add-on, available here.",
+	"You can also opt out of interest-based ads from companies participating in the following industry opt-out programs by visiting the linked websites: the Network Advertising Initiative (http://www.networkadvertising.org/managing/opt_out.asp) and the Digital Advertising Alliance (https://optout.aboutads.info). Users of our Mobile Application may opt out of receiving targeted advertising in through participating members of the Digital Advertising Alliance by installing the AppChoices mobile app, available here, and selecting the user's choices."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = ["Nebula reserves the right, at any time, to modify this Privacy Policy. If we modify how we collect, use, or share personal information, we will post the updated Privacy Policy on this page. In some cases, we may notify you about an update by sending you an email, posting a notice about the update on the Services, or other means as may be required by applicable law."]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+	"We build security into our Platform that is designed to protect your personal information, but no method over the Internet is fully secure.",
+	"No method of transmission over the Internet, or method of electronic storage, is fully secure. While we use reasonable efforts to protect your personal information from the risks presented by unauthorized access or acquisition, we cannot guarantee the security of your personal information. In the event that we are required by law to inform you of any unauthorized access or acquisition of your personal information we may notify you electronically, in writing, or by telephone, if permitted to do so by law."
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+	"We share personal information as necessary to provide the Services and for purposes described elsewhere in this Privacy Policy or at the time of collection, including with related companies, service providers, advertising partners (including for interest-based advertising), and to law enforcement, authorities, and other third parties as may be necessary for compliance, fraud prevention, safety, or in the event of a business transaction.",
+	"We may share your personal information with our affiliates, subsidiaries, and other related companies.",
+	"We may share your personal information with the Nebula community of digital video creators and podcasters.",
+	"We may share your personal information with third parties who perform services on our behalf that are necessary for the orderly operation of our business. For example, we work with services providers who help us perform e-commerce and product fulfillment, billing, payment processing, website hosting, app design, maintenance services, database management, web analytics, app analytics, fraud protection, credit risk reduction, marketing, and other purposes.",
+	"We may also share personal information with third parties who we partner with for advertising campaigns or that collect information about your activity on the Services for the purposes described in the \"Interest-Based Advertising\" section above.",
+	"We may share personal information with persons, companies, or professional firms providing Nebula with advice and consulting in accounting, administrative, legal, tax, financial, debt collection, and other matters.",
+	"Under certain circumstances, we may be required to disclose personal information to law enforcement, government authorities, and other parties if required to do so by law or in response to valid requests by public authorities (e.g., a court or a government agency).",
+	"We may disclose personal information in the good faith belief that such action is necessary to comply with a legal obligation or for the purposes described above in the section titled \"Compliance, Fraud Prevention, and Safety.\"",
+	"We may disclose personal information to third parties in connection with any business transaction (or potential transaction) involving a merger, acquisition, sale of shares or assets, financing, consolidation, reorganization, divestiture, or dissolution of all or a portion of our business (including in connection with a bankruptcy or similar proceedings)."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+	"Nebula may receive personal information about you from other third-party sources, including from our service providers, data analytics partners, social media platforms, advertising partners, business partners, data providers, publicly available sources, and third party APIs. We may merge or combine such personal information with the personal information we collect from you directly or automatically."
+]

@@ -1,0 +1,132 @@
+name = "Tuta"
+description = "Tuta is a freemium secure email provider (formerly Tutanota)."
+slug = "tuta"
+hostnames = [ "tuta.com" ]
+sources = [ "https://tuta.com/privacy-policy", "https://tuta.com/de/privacy-policy?stickyLang=true" ]
+contributors = [ "doamatto" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+notes = [ "The privacy policy does not have any mentions about behavioural marketing. " ]
+
+[rubric.security]
+value = "yes"
+notes = [
+  "This is not outlined in the privacy policy, but on a separate page: https://tuta.com/security"
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "In order to be able to evaluate campaigns with partners and advertising campaigns (e.g. advertising via Google or other search engines), we store an ID of the campaign with your Tutanota account when you reach Tutanota via a campaign link and register a Tutanota account. To be able to assign returning users to a campaign, we store a cryptographic hash of the IP address and the user agent (including information about the user’s browser and operating system) together with the campaign ID when you visit our website via a campaign link. If you visit our website via a search query and an advertising campaign, we also store the keywords and the search query together with the hash and the campaign ID. By using the hash, it is no longer possible to infer the IP address or the user agent. The keywords and the search query are not stored with the Tutanota account.",
+  "The hash and the campaign ID, keywords and search query stored together with the hash are deleted after 72 hours. Beyond this period of 72 hours, for the purpose of evaluating the campaign and until the completion of the evaluation, only completely anonymized campaign data (keywords and search query) are stored and processed without any link to the hash.",
+  "Insofar as we process personal data during the campaign analysis, this is done on the basis of Art 6 para. 1 p. lit. f) GDPR. Our interest in being able to evaluate advertising campaigns and to improve our marketing activities constitute a legitimate interest within the meaning of Art. 6 para. 1 p. lit. f) GDPR."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Status: September 26, 2022" ]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "When signing up for a Tutanota account, you give consent to the processing of this data according to Art. 6 DSGVO 1. a). All textual content is encrypted for the user and its communication partners in a way that even Tutao GmbH has no access to the data. This data can be deleted by the user."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "Tutanota is based in Germany so it is legally obliged to notify users of data breaches, but does not make any mention about if they will do so."
+]
+
+[rubric.third-party-access]
+value = "yes-specified-critical"
+citations = [
+  "For the execution of direct debiting we will share your banking details with the authorized credit institution. For the execution of PayPal payments we will share your PayPal data with PayPal (Europe).",
+  "For the execution of credit card payments your credit card data will be shared with our payment service provider Braintree. This includes the transfer of personal data into a third country (USA). An agreement entered into with Braintree defines appropriate safeguards and demands that the data is only processed in compliance with the GDPR and only for the purpose of execution of payments.",
+  "With the exception of payment data, we will not disclose your personal data including your email address to third parties. However, we can be legally bound to provide content data (in case of a valid court order) and inventory data to prosecution services. There will be no sale of data."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  """
+  For the initiation of a contractual relationship and for service provision we collect
+    - the newly registered email address
+  as inventory data.
+  """,
+  """
+  For invoicing and determining the VAT we collect for paid product variants
+    - the domicile of the customer (country)
+    - the name and invoicing address (for private users optional)
+    - the VAT identification number (only for business customers of some countries)
+  as inventory data.
+  """,
+  """
+  For the transaction of payments we collect depending on the chosen payment method the following payment data (inventory data):
+    - Banking details (account number and sort code and IBAN/BIC, if necessary bank name, account holder),
+    - credit card data,
+    - PayPal user name.
+  """,
+  "This inventory data is processed for the performance of the contract with the customer according to Art. 6 para. 1 p. 1 lit. b) GDPR.",
+  """
+  For the execution of direct debiting we will share your banking details with the authorized credit institution. For the execution of PayPal payments we will share your PayPal data with PayPal (Europe).
+    - Address: PayPal (Europe) S.à r.l. et Cie, S.C.A.,22-24 Boulevard Royal, L-2449 Luxembourg
+    - Paypal privacy statement
+    - Paypal contact for questions about privacy
+  """,
+  "For the execution of credit card payments your credit card data will be shared with our payment service provider Braintree. This includes the transfer of personal data into a third country (USA). An agreement entered into with Braintree defines appropriate safeguards and demands that the data is only processed in compliance with the GDPR and only for the purpose of execution of payments.",
+  "In order to maintain email server operations, for error diagnosis and for prevention of abuse, mail server logs are stored max. 7 days. These logs contain sender and recipient email addresses and time of connection but no customer IP addresses. Storage takes place for the purposes of the legitimate interests pursued by the controller according to Art. 6 para. 1 p. 1 lit. f) GDPR.",
+  "In order to maintain operations, for prevention of abuse and and for visitors analysis, IP addresses of users are processed. Storage only takes place for IP addresses made anonymous which are therefore not personal data any more. This processing takes place for the purposes of the legitimate interests pursued by the controller according to Art. 6 para. 1 p. 1 lit. f) GDPR.",
+  "In order to be able to evaluate campaigns with partners and advertising campaigns (e.g. advertising via Google or other search engines), we store an ID of the campaign with your Tutanota account when you reach Tutanota via a campaign link and register a Tutanota account."
+]
+
+[rubric.noncritical-purposes]
+value = "opt-in"
+citations = [
+  "We use technical analysis options very sparingly and only if you have consented in advance and to the extent that this is necessary for the further development and improvement of Tutanota. In particular, we do not use analysis tools such as Google Analytics or other third-party tools. ... If you have given consent in advance, your anonymized usage data will be sent to our servers.",
+  "You can revoke your consent to participate in the anonymized usage statistics at any time by deactivating this function in the settings of your account. The random ID stored on your device is used only as long as users of the device participate in the collection of usage statistics.",
+  """
+  You can delete the random ID stored locally on your device yourself at any time, for instance, like this:
+    - In the web client (https://app.tuta.com): In the browser’s menu settings by clearing the website data (e.g., “Clear browsing data” or “Clear cookies and other site data”).
+    - Mobile apps (Android/iOS): In the app settings by clearing the app’s stored data.
+    - Installed desktop clients: In the file system by deleting the app’s stored data.
+  """  
+]
+
+[rubric.law-enforcement]
+value = "strict"
+citations = [
+  "However, we can be legally bound to provide content data (in case of a valid court order) and inventory data to prosecution services. There will be no sale of data."
+]
+notes = [
+  "They have a warrant canary at https://tutanota.com/blog/posts/transparency-report/"
+]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  """
+  For the initiation of a contractual relationship and for service provision we collect
+    - the newly registered email address
+  as inventory data.
+  """,
+  """
+  For invoicing and determining the VAT we collect for paid product variants
+    - the domicile of the customer (country)
+    - the name and invoicing address (for private users optional)
+    - the VAT identification number (only for business customers of some countries)
+  as inventory data.
+  """,
+  """
+  For the transaction of payments we collect depending on the chosen payment method the following payment data (inventory data):
+    - Banking details (account number and sort code and IBAN/BIC, if necessary bank name, account holder),
+    - credit card data,
+    - PayPal user name.
+  """,
+  "In order to be able to evaluate campaigns with partners and advertising campaigns (e.g. advertising via Google or other search engines), we store an ID of the campaign with your Tutanota account when you reach Tutanota via a campaign link and register a Tutanota account. To be able to assign returning users to a campaign, we store a cryptographic hash of the IP address and the user agent (including information about the user’s browser and operating system) together with the campaign ID when you visit our website via a campaign link. If you visit our website via a search query and an advertising campaign, we also store the keywords and the search query together with the hash and the campaign ID. By using the hash, it is no longer possible to infer the IP address or the user agent. The keywords and the search query are not stored with the Tutanota account."
+]
+
+[rubric.revision-notify]
+value = "no"
+notes = [ "German laws require users to be notified four weeks prior to a policy change. Tutanota has historically sent out these notices, but does not make any mention about if they will do so." ]

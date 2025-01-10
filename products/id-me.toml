@@ -1,0 +1,169 @@
+name = "ID.me"
+description = "Consumers can verify their identity with ID.me once and seamlessly log in across websites without having to create a new login or verify their identity again."
+slug = "id-me"
+hostnames = ["id.me"]
+sources = ["https://www.id.me/privacy", "https://id.me/biometric", "https://www.id.me/security"]
+contributors = ["opile8"]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "We may use your information to send promotional messages and newsletters via email or otherwise alert you to products or Services we think might be of interest to you including for ID.me Shop. You may unsubscribe from receiving marketing communications from us at any time by logging in to your account and navigating to \"My Preferences\" to manage your subscriptions.", 
+  "Please note, if you are using ID.me Services in connection with legal identity verification for a state or federal government agency, or in association with Electronic Prescriptions for Controlled Substance Services, we will not use any Personal Information provided as part of your verification for any type of marketing or promotional purposes related to ID.me Shop without your consent, or unless you otherwise use your ID.me credential for verification with any ID.me customer who is not a state or federal government agency customer, use your ID.me account in connection with ID.me Shop, ID.me Jobs, or ID.me Rx, or otherwise opt-in to receiving marketing communications from ID.me."  
+]
+notes = [
+  "Explanation of 2nd paragraph: Use of personal data requires consent (\"opt-in\") if ID.me services are used EXCLUSIVELY for \"state or federal government [agencies]\" or \"in association with Electronic Prescriptions for Controlled Substance Services\". ", 
+  "However, verification with any one of ID.me's \"Shop\", \"Jobs\", or \"RX\" services (tabs at the top) or any non-government agency appears to constitute *automatic* \"opt-in\" for marketing.", 
+  "Opt-out is completed through links in marketing emails or account preferences."
+]
+
+[rubric.security]
+value = "yes-independent-audits"
+citations = [
+  "[Privacy Page]", 
+  "We use reasonable security measures. We are committed to protecting your information. We have adopted technical, administrative, and physical security procedures to help protect your information from loss, misuse, unauthorized access, and alteration. Please note that no data transmission or storage can be guaranteed to be 100% secure.", 
+  "To safeguard certain sensitive information (such as biometric information and government-issued identification information), we implement security measures such as encryption, firewalls, and intrusion detection and prevention systems.", 
+  "In addition, the following are examples of security measures that are used to safeguard all types of Personal Information we maintain about our consumers:", 
+  "- Procedures for the identification and classification of Personal Information and implementation of safeguards appropriate to the sensitivity of the information;", 
+  "- access control procedures designed to verify a business need before access to Personal Information is granted, and procedures for the periodic review of access permissions;", 
+  "- procedures for termination of access to Personal Information designed to curtail access to the information by terminated personnel or when there is no longer a business need for access;", 
+  "- personnel security controls designed to reduce the risk of human error, theft, fraud or misuse of facilities; and", 
+  "- physical and environmental security procedures designed to prevent unauthorized access, damage or interference to business premises and information.", 
+  "", 
+  "[Security Page]", 
+  "ID.me has been designed to comply with rigorous information security regulations including AICPA SOC 2, ISO 27001, FedRAMP, and multiple NIST 800 guidelines. Multiple ID.me clients have completed extensive technical due diligence with regard to the processing environment. [...] ID.me implements role based access management, separation of duties, and multifactor authentication. Data at rest and in transit is encrypted using approved FIPS 140-2 algorithms. Personally Identifiable Information (PII) is encrypted using a rolling key and the AES-256-CBC algorithms."
+]
+notes = [
+  "See ID.me's [Security](https://www.id.me/security) page for a thorough explanation of their data, network, and data center security standards."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "Information from our partners. We acquire information from other trusted sources. These business partners might include companies, such as your mobile phone carriers, certain government agencies, licensing bodies, etc. We may also collect information about you from other sources, including service providers, data licensors and aggregators, marketing companies, programming distributors, and public databases.", 
+  "Information you provide through social media", 
+  "If you connect to us through a social media platform or navigate to a social media platform from one of our sites, the social media platform will collect your information separately from us. You should review the social media platforms' privacy policies to understand how they are using your information and your rights in relation to such information.", 
+  "Information We Derive", 
+  "We may derive additional information or draw inferences about you based on the information we have collected from you directly, passively, or through third parties."
+]
+notes = [
+  "ID.me previously (until 3/14/2022) allowed login to Facebook using ID.me as the sign-on service (via Facebook Connect). The privacy policy at that time included language about ID.me's collection and storage of data about those contacts (depending on the users' privacy settings). ID.me still allows a customer to [use social media accounts to sign into ID.me](https://help.id.me/hc/en-us/articles/360057107014-Connecting-social-or-third-party-accounts-to-your-ID-me-account) from accounts like Apple, Facebook, Google, or LinkedIn, but ID.me no longer seems policy no longer mentions these by name."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [
+  "[Privacy Policy Page]", 
+  "This Privacy Policy may be periodically updated. This Privacy Policy may be updated periodically to reflect new ID.me features or changes in our Personal Information practices. We will post a notice for consumers at the top of this Privacy Policy of any significant changes. We will indicate at the top of the Privacy Policy when the policy was most recently updated.",
+  "[Biometric Policy Page]", 
+  "This Biometric Information Privacy Policy may be periodically updated. From time-to-time we may update this policy to reflect new features or changes in our Personal Information practices or our Services. We will post a notice for users at the top of this Privacy Policy addressing any significant changes."
+]
+notes = [
+  "ID.me does not make previous policies available nor do they indicate (either on the website or via customer email) the substance of any major changes. Wayback Machine (web.archive.org) confirmed ID.me does post a top banner with a link to the privacy policy when it changes. Both the privacy policy and biometric policy pages include a version number and date when last updated."
+]
+
+[rubric.data-deletion]
+value = "yes-automated"
+citations = [
+  "[Privacy Policy Page]", 
+  "Personal Information will be retained until we have fulfilled our legal, contractual and policy obligations. ID.me stores your Personal Information for as long as needed, or permitted, based on the reason why we obtained it (consistent with applicable law and contractual obligations). This means we may retain your Personal Information even after you close your account with us, for up to three (3) years. Users may request that ID.me delete certain Personal Information at any time at account.ID.me or through our Privacy Rights Center, where applicable. We acknowledge all such requests, however we reserve the right to retain data tied to certain high-risk transactions, particularly in government and healthcare settings, exclusively for fraud prevention and government audit purposes.", 
+  "ID.me aligns to the National Archives recommended guidelines for data retention when supporting government agencies. Personal Information provided by users in connection with a public sector agency as part of their verification may be retained for up to three (3) years after account closure, unless applicable regulations require a shorter retention period.", 
+  "[Biometric Policy Page]", 
+  "8. Can I Request that ID.me Delete My Biometric Information?", 
+  "Yes, you may direct ID.me to delete your Biometric Information. After successfully verifying your identity, you may request that ID.me delete your Biometric Information. You may request the deletion of both the selfie image and Biometric Information submitted during your verification by submitting a request through the ID.me \"Privacy Rights Center\" which is accessible via a link at the bottom of our Website, or under the \"Privacy\" setting in your account. Deletion of the selfie image and associated Biometric Information may take up to seven (7) days and will not impact the validity of your credential or verified status. ID.me reserves the right to retain this information as needed to comply with our legal obligations, including warrants, subpoenas or other court orders, or to help prevent fraud.", 
+  "Pursuant to the California Consumer Privacy Act of 2018 (CCPA), residents of California are entitled to additional rights and disclosures regarding their Personal information, including Biometric Information. Please see our Notice to California Residents for additional details regarding these disclosures and how to exercise your rights."
+]
+notes = [
+  "Some information you provide to ID.me may be retained for up to 36 months for legal compliance purposes following a deletion request. Biometric information will automatically \"age off\" after 36 months, if not sooner."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "Policy makes no mention of data breach procedures or notification to potential victims."
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified-critical"
+citations = [
+  "We may share your Personal Information with entities necessary to validate your ID.me Account and provide our Services to you. In order to verify your identity and eligibility to receive discounts and other benefits from our partners and other service providers, we may provide your Personal Information to third parties such as government agencies, telecommunications networks, financial institutions or other trusted and reliable sources of information. Our provision of your Personal Information to the foregoing parties is solely to verify your identity and eligibility for ID.me Services. We have established relationships with Registration Authorities similar to the entities described above whereby the Personal Information you provide to us will be transmitted to them using industry standard encryption tools, designed to protect such information from unauthorized access.", 
+  "[...]", 
+  "We may share information with third parties who perform services on our behalf. We may share your information with unaffiliated companies or individuals we hire or work with that provide us with professional advice, business support, or perform services on our behalf, including customer support, web hosting, information technology, payment processing, direct mail and email distribution, and administration, and analytics services. These Service Providers are allowed to use your information to help us provide our Services and not for any other purpose."
+]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "[Privacy Policy Page]", 
+  "**2. How We May Use Your Information and Why**",
+  "[...]",
+  "**We may use information to provide you with our Services.** We may use the information collected from or about you to authenticate and manage your identity when you create an ID.me account, including to verify attributes of your identity including, but not limited to, community affiliations (e.g., military status, first responder, student, veteran status, etc.), memberships, social media accounts, educational degrees, and professional certifications, [...] . We may use this information to verify your identity with ID.me partners in both the public and private sector at your request and perform our contractual obligations with you or to ensure that our Services function properly.", 
+  "**We may use Personal Information to perform reporting with our public sector customers.** In order to better serve our users, and to facilitate the identity verification process, ID.me may share a limited set of Personal Information -  including first name, last name, date of birth, phone number, email address, and physical address as requested by a specific state or federal government agency - on behalf of users undergoing legal identity verification for a given government agency. [...] ", 
+  "**We may use information for marketing purposes.** We may use your information to send promotional messages and newsletters via email, or otherwise alert you to products or Services we think might be of interest to you, including for ID.me Shop. [...]", 
+  "[Biometric Policy Page]", 
+  "We use your Biometric Information only as follows:", 
+  "- To verify your identity when you are opening an account or using our Services;", 
+  "- To authenticate use of your account and the Services for a transaction;", 
+  "- To prevent fraudulent uses of ID.me’s Services or the creation of multiple accounts; and", 
+  "- To comply with legal obligations or comply with a request from law enforcement or government entities where not prohibited by law."
+]
+notes = [
+  "(see also, \"non-critical purposes\" grade for discussion about data collected for marketing purposes)"
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-all"
+citations = [
+  "We may use your information to send promotional messages and newsletters via email or otherwise alert you to products or Services we think might be of interest to you including for ID.me Shop. You may unsubscribe from receiving marketing communications from us at any time by logging in to your account and navigating to \"My Preferences\" to manage your subscriptions."
+]
+notes = [
+  "If ID.me is strictly used as identity verification for (state/federal) government services then this is on an \"opt-in basis\" so no marketing occurs (see also \"behavioral marketing\")."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "[Privacy Policy Page]", 
+  "**We may share information as needed in order to comply with legal processes, to protect ourselves, or improve our Services.** For example, we will share information when it is necessary for us to comply with applicable law or legal process, to respond to legal claims, to prevent fraud, or to protect our rights or the property or personal safety of our users, employees, or the public.", 
+  "We also use third party service providers to track and analyze website usage and volume statistical information to administer our Website and constantly improve its quality.", 
+  "**We may share information as required with the United States federal government and certain state governments.** ID.me does not provide any government with direct and unfettered access to our user's data, and we do not provide any government with our encryption keys or the ability to break our encryption. We may share certain Personal Information associated with an ID.me account with government entities where we reasonably believe that account may be engaging in fraud.", 
+  "If a government entity requires additional information related to an ID.me account, whether related to a suspected instance of fraud or otherwise, it must follow applicable legal processes. It must serve us with a subpoena, warrant, or present other legally compelling justification for the additional information associated with the account, the request must be targeted and specific in nature.", 
+  "Our legal and compliance teams review all requests to ensure they are valid, reject those that are not valid, and only provide the data specified in the subpoena or similar court order.", 
+  "**Information you provide offline.** You may also provide information to us in person and offline. You may be recorded if you visit our offices (including by security surveillance of our premises, including CCTV).", 
+  "**Other information.** We also collect information that relates to or is capable of being associated with you, such as age, gender, and any other information you choose to provide.", 
+  "***Information Collected Automatically***", 
+  "When using our Services we may automatically collect or receive certain information associated with you or your network device(s), such as your computer or mobile devices. This includes information about your use of our Services and your preferences. Such information may be automatically collected through device-based tracking technologies such as cookies, pixels, tags, beacons, scripts, or other technologies. For more information about cookies or other tracking technologies and the choices you have regarding the use of them, please visit our ID.me [Cookie Policy](https://www.id.me/cookie-policy).", 
+  "The information we automatically collect may also include geolocation information, such as information that identifies the approximate location of your device and your IP address, which may be used to estimate your approximate location.", 
+  "**Information from our partners.** We acquire information from other trusted sources. These business partners might include companies, such as your mobile phone carriers, certain government agencies, licensing bodies, etc. We may also collect information about you from other sources, including service providers, data licensors and aggregators, marketing companies, programming distributors, and public databases.", 
+  "***Information you provide through social media***", 
+  "If you connect to us through a social media platform or navigate to a social media platform from one of our sites, the social media platform will collect your information separately from us. You should review the social media platforms' privacy policies to understand how they are using your information and your rights in relation to such information.", 
+  "***Information We Derive***", 
+  "We may derive additional information or draw inferences about you based on the information we have collected from you directly, passively, or through third parties.", 
+  "[Biometric Policy Page]", 
+  "ID.me will only share your Biometric Information with our partners in the following circumstances:", 
+  "As required with other third parties where permitted by law to enforce our Terms of Service, to comply with legal obligations, or to cooperate with law enforcement agencies concerning conduct or activity that we reasonably believe may violate federal, state, or local law when required by a subpoena, warrant, or other court ordered legal action, and to prevent harm, loss or injury to others.", 
+  "To third party service providers that perform functions on our behalf. These service providers are limited to using the Biometric Information to assist in our provision of Services, and must maintain any Biometric Information we share in a secure fashion."
+]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "[Privacy Policy Page]",
+  "***Information You Provide***", 
+  "*We Collect Information You Provide to Us Which Includes:*",
+  "**Verification information.** When you verify yourself, either individually or as part of a community, with ID.me you provide us with Personal Information that may include your name, date of birth, social security number and/or other government issued identification numbers, copies of your government issued identification card (e.g., license or passport), email address, phone number, mailing address, and certain photographic images, and biometric data.  You may also be asked to provide community affiliations (e.g., Military, First Responder, Student, Veteran, etc.), memberships, educational degrees, and professional certifications.", 
+  "Please note, ID.me asks that you not provide physical documentation, via mail service or otherwise, to ID.me. All documentation to be collected should be provided either through the ID.me app or website portal, or presented to a trusted referee where applicable.", 
+  "Your correspondence and your feedback about our Services. We collect information you provide when you contact us directly or provide feedback, comments, or suggestions on our Services directly to us.", 
+  "**Information you provide when you do business with ID.me.** If you are a vendor, service provider, or business partner of ID.me, we may collect information about you and the services you provide, including your or your employees' business contact information and other information you or your employees provide to us as part of the services you may provide and our agreement with you.", 
+  
+  "[Biometric Policy Page]", 
+  "The information we collect will vary depending on the specific type of Services you request. Many ID.me Services do not require Biometric Information, however certain Services – those requiring a NIST 800-63A IAL2 credential, such as the Internal Revenue Service (IRS), Office of Veterans Affairs (VA), or certain state unemployment or labor departments - may require a higher level of assurance for your identity verification. When you sign up for an applicable ID.me Service we may collect the following Biometric Information:", 
+  " - Facial Biometrics: Our Service may require you to upload an image of your government issued or other identification document(s) as well as your photographic image or \"selfie\" photograph using your mobile or other device. We use these images to create a facial geometry or faceprint which we use for purposes of identity verification and to prevent the creation of multiple accounts in a fraudulent manner.", 
+  " - Fingerprint Information: Our Service may require the submission of fingerprints, including fingerprint or hand scanning. Our Service may require the submission of fingerprints, including fingerprint or hand scanning, which we use for purposes of identity verification and to prevent the creation of multiple accounts in a fraudulent manner."
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "This Privacy Policy may be periodically updated. This Privacy Policy may be updated periodically to reflect new ID.me features or changes in our Personal Information practices. We will post a notice for consumers at the top of this Privacy Policy of any significant changes. We will indicate at the top of the Privacy Policy when the policy was most recently updated."
+]

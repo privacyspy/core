@@ -1,0 +1,82 @@
+name = "Ente"
+description = "Ente is an end-to-end encrypted, open-source cloud storage service for photos and videos."
+slug = "ente"
+hostnames = [ "ente.io" ]
+sources = [ "https://ente.io/privacy" ]
+contributors = [ "vkeerthivikram" ]
+
+[rubric.behavioral-marketing]
+value = "no"
+citations = [ "We do not sell your personal information, nor do we intend to do so." ]
+
+[rubric.data-breaches]
+value = "yes-72"
+citations = [ "In the event of a personal data breach, we will notify you within seventy-two (72) hours via email." ]
+
+[rubric.data-collection-reasoning]
+value = "yes"
+citations = [
+  "We collect and store only the bare minimum amount of information necessary to fulfill our role as a service provider.",
+  """
+  We use the information that you provide to:
+  Provide our Services that you contract for when you agree to our Terms and Conditions ("Terms");
+  Communicate with you in accordance with this Privacy Policy and ourTerms;
+  Maintain and improve our systems and Services;
+  Ensure your account's security and mitigate attacks;
+  Carry out obligations and enforce rights arising from contracts entered into between you and us, including billing and collection;
+  Control access permissions to your Files and your account;
+  Remove deleted files from users who might have already downloaded them;
+  Notify you about changes to our Services; and
+  Anonymize data and aggregate data for statistics.
+  """
+]
+
+[rubric.data-deletion]
+value = "yes-contact"
+citations = [
+  "To make any of the aforementioned requests, please contact our Data Privacy Officer, Manav Rathi at dpo@ente.io, or contact us in accordance with Section 17.",
+  "After account termination, we may retain your Data for sixty (60) days, or as warranted by your jurisdiction (\"Retention Period\"), unless an enforcement action is likely under ourTerms. If there is no enforcement action likely or commenced and Retention Period has expired, your Data that identifies you will be anonymized."
+]
+notes = [
+  "While the privacy policy does not explicitly state that users can automatically delete their data, there is a delete account button in the app settings."
+]
+
+[rubric.history]
+value = "last-modified"
+citations = [ "Last Updated: Sep 25, 2024" ]
+
+[rubric.law-enforcement]
+value = "strict"
+citations = [ "We will disclose personal information (i) to comply with any court order, law, or legal process, including to respond to any government or regulatory request" ]
+
+[rubric.list-collected]
+value = "exhaustively"
+citations = [
+  "Information you Provide: At the time of registration, or through your use of our Services, you will provide us with 1. Your email address; 2. Referral details including referrers and people you have referred; 3. Email addresses you choose to share your Files with; 4. Our Communications with you and records or copies of such communications; 5. Other personal information you provide to us for support purposes, bug reports, newsletters, surveys, sweepstakes, product feedback, or via forms.",
+  "Information we automatically collect: 1. Public keys; 2. Anonymized crash reports; 3. Server logs; 4. Device identifiers including information about your internet connection, IP address and user agent details; 5. Takedowns and account suspension history.",
+  "Other Instances: We may keep your Files after your account has been suspended or terminated where we consider it necessary for evidential purposes relating to a breach of our Terms or with respect to current or anticipated action by any competent enforcement authority or other third party."
+]
+
+[rubric.noncritical-purposes]
+value = "na"
+notes = [ "There is no mention of non-critical purposes for collecting data in the privacy policy." ]
+
+[rubric.revision-notify]
+value = "no"
+citations = [ "We will update this privacy policy as needed so that it is current, accurate, and as clear as possible. Your continued use of our Services confirms your acceptance of our updated Privacy Policy." ]
+
+[rubric.security]
+value = "somewhat"
+citations = [ "We have implemented measures designed to secure your personal information from accidental loss and from unauthorized access, use, alteration, and disclosure. Specifically (a) all information you provide to us is stored on our secure servers behind firewalls, (b) our website and app use an SSL certificate, receive regular security scans, penetration tests and regular malware scans; (c) we require username and passwords for our employees who can access your personal information that we store and/or process, and (d) we actively prevent third parties from getting access to your personal information that we store and/or process." ]
+notes = [ "While Ente has undergone third-party security audits (by Cure53 and Fallible), it's been awhile since their last audit (Feb 2023). You can view more information about the audits on their blog: https://ente.io/blog/cryptography-audit/" ]
+
+[rubric.third-party-access]
+value = "yes-specified-critical"
+citations = [
+  "We do not sell, trade, rent, or otherwise transfer personal information to others, unless we provide you with advance notice. There are times when Personal Information that you have shared with us may be shared by Ente with others to enable us to provide you over Services, including contractors, service providers, and third parties (\"Partners\") and subsidiaries.",
+  "Ente uses the following third-party service providers for the provision of services as detailed under the Terms, as applicable: Apple, Google, Stripe, BitPay, PayPal, Scaleway, Backblaze, Cloudflare, Amazon, Hetzner, FeatureMonkey, Simple Analytics, Zoho, Grafana, Open Street Maps"
+]
+
+[rubric.third-party-collection]
+value = "critical-only"
+citations = [ "We collect payment invoices provided to us by our third-party payment processors, which includes details of your Subscription Plan and any payments made by you in favor of Ente in order to receive Services from us. We do not collect or store any credit cards or bank information." ]
