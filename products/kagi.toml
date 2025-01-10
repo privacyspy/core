@@ -1,5 +1,5 @@
 name = "Kagi"
-description = "Paid Ad-free Search Engine."
+description = "Kagi is a paid ad-free search engine."
 slug = "kagi"
 hostnames = [ "kagi.com" ]
 sources = [ "https://kagi.com/privacy" ]
