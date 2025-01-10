@@ -28,7 +28,7 @@ citations = [
 ]
 
 [rubric.data-deletion]
-value = "yes-automated"
+value = "yes-contact"
 citations = [
 "There is an option to delete your account."," When you do this, all information and settings related to your account is removed from our database."
 ]
