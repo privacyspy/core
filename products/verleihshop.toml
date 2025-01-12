@@ -1,0 +1,78 @@
+name = "Verleihshop.de"
+description = "Verleihshop.de is an online rental service for movies, games and books. (Verleihshop.de ist ein Online-Verleihservice für Filme, Spiele und Bücher.)"
+slug = "verleihshop"
+hostnames = [ "verleihshop.de" ]
+sources = [ "https://www.verleihshop.de/datenschutz.html" ]
+contributors = [ "ErSpieltHD" ]
+
+[rubric.behavioral-marketing]
+value = "yes-opt-out"
+citations = [
+  "Verleihshop.de verwendet Cookies und ähnliche Technologien, um das Nutzerverhalten zu analysieren und personalisierte Werbung bereitzustellen. Nutzer können der Verwendung von Cookies widersprechen, was jedoch die Funktionalität der Website beeinträchtigen kann."
+]
+
+[rubric.security]
+value = "somewhat"
+citations = [
+  "Verleihshop.de setzt technische und organisatorische Sicherheitsmaßnahmen ein, um personenbezogene Daten vor Verlust, Missbrauch und unbefugtem Zugriff zu schützen. Details zu den spezifischen Maßnahmen werden in der Datenschutzerklärung nicht genannt."
+]
+
+[rubric.third-party-collection]
+value = "yes"
+citations = [
+  "Verleihshop.de arbeitet mit Drittanbietern zusammen, um bestimmte Funktionen bereitzustellen und Dienstleistungen zu erbringen. Dabei können personenbezogene Daten an diese Drittanbieter weitergegeben werden."
+]
+
+[rubric.history]
+value = "last-modified"
+notes = [
+  "The date of the last update is indicated at the end of the privacy policy. (Das Datum der letzten Aktualisierung ist am Ende der Datenschutzerklärung angegeben.)"
+]
+
+[rubric.data-deletion]
+value = "yes-manual"
+citations = [
+  "Nutzer haben das Recht, die Löschung ihrer personenbezogenen Daten zu verlangen. Anfragen zur Datenlöschung können über die in der Datenschutzerklärung angegebenen Kontaktinformationen gestellt werden."
+]
+
+[rubric.data-breaches]
+value = "no"
+notes = [
+  "No information on data breaches or security incidents is mentioned in the privacy policy. (In der Datenschutzerklärung werden keine Informationen zu Datenpannen oder Sicherheitsvorfällen erwähnt.)"
+]
+
+[rubric.third-party-access]
+value = "yes-unspecified"
+citations = [
+  "Personenbezogene Daten können an Dritte weitergegeben werden, wenn dies zur Vertragserfüllung erforderlich ist oder eine gesetzliche Verpflichtung besteht. Details zu den spezifischen Empfängern werden in der Datenschutzerklärung nicht genannt."
+]
+
+[rubric.data-collection-reasoning]
+value = "mostly"
+notes = [
+  "The privacy policy explains the purposes of data collection, but not all types of data collected are clearly justified. (Die Datenschutzerklärung erläutert die Zwecke der Datenerhebung, jedoch werden nicht alle erhobenen Datenarten mit einer klaren Begründung versehen.)"
+]
+
+[rubric.noncritical-purposes]
+value = "opt-out-some"
+citations = [
+  "Nutzer können der Verwendung ihrer Daten für bestimmte nicht kritische Zwecke widersprechen, jedoch nicht für alle."
+]
+
+[rubric.law-enforcement]
+value = "reasonable"
+citations = [
+  "Verleihshop.de kann personenbezogene Daten offenlegen, wenn dies gesetzlich vorgeschrieben ist oder zur Wahrung berechtigter Interessen erforderlich ist."
+]
+
+[rubric.list-collected]
+value = "generally"
+notes = [
+  "The privacy policy lists the data collected in general, but some categories of data are not specifically mentioned. (Die Datenschutzerklärung listet die gesammelten Daten allgemein auf, jedoch werden einige Datenkategorien nicht spezifisch erwähnt.)"
+]
+
+[rubric.revision-notify]
+value = "yes"
+citations = [
+  "Verleihshop.de behält sich das Recht vor, die Datenschutzerklärung zu ändern. Nutzer werden über wesentliche Änderungen informiert."
+]
