@@ -9,8 +9,6 @@ import { loadRubric } from "../parsing/index";
 const gulp = require("gulp");
 const rename = require("gulp-rename");
 const hb = require("gulp-hb");
-const hbHelpers = require("handlebars-helpers");
-
 const PAGE_NUMBER_PADDING = 3; // i.e.: *1* 2 3 ... 8
 
 export function hbsFactory(data: object = {}) {
@@ -29,13 +27,19 @@ export function hbsFactory(data: object = {}) {
       }),
       ...data,
     })
-    .helpers(hbHelpers())
+    .helpers(require("hbl-cmark"))
+    .helpers(require("hbl-comparison"))
+    .helpers(require("hbl-maths"))
+    .helpers(require("hbl-strings"))
+    .helpers(require("hbl-urls"))
     .helpers({
       ratioColorClass,
       getMonth,
       shouldIncludePage,
       shouldIncludeEllipsis,
     });
+  //.helpers(require("hbl-arrays").default)
+  //.helpers(require("hbl-object").default)
 }
 
 export function getProductPageBuildTasks(products: Product[]) {
