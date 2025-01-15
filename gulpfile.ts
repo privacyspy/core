@@ -1,4 +1,4 @@
-require("dotenv").config();
+//require("dotenv").config();
 
 import { Product, RubricQuestion, Contributor } from "./src/parsing/types";
 
@@ -18,15 +18,18 @@ import {
 const gulp = require("gulp");
 const postcss = require("gulp-postcss");
 const rename = require("gulp-rename");
-const del = require("del");
-const fs = require("fs");
+const fs = require("node:fs");
+const path = require("node:path");
 
 const rubric: RubricQuestion[] = loadRubric();
 const contributors: Contributor[] = loadContributors();
 const products: Product[] = loadProducts(rubric, contributors);
 
-gulp.task("clean", () => {
-  return del("./dist/**/*");
+gulp.task("clean", async () => {
+  return await fs.rm(path.join(__dirname, "dist"), {
+    recursive: true,
+    force: true,
+  });
 });
 
 gulp.task("build api", async () => {
