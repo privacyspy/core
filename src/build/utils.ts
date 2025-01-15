@@ -27,9 +27,11 @@ export function hbsFactory(data: object = {}) {
       }),
       ...data,
     })
+    .helpers(require("hbl-arrays"))
     .helpers(require("hbl-cmark"))
     .helpers(require("hbl-comparison"))
     .helpers(require("hbl-maths"))
+    .helpers(require("hbl-object"))
     .helpers(require("hbl-strings"))
     .helpers(require("hbl-urls"))
     .helpers({
