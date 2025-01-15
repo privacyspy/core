@@ -40,8 +40,6 @@ export function hbsFactory(data: object = {}) {
       shouldIncludePage,
       shouldIncludeEllipsis,
     });
-  //.helpers(require("hbl-arrays").default)
-  //.helpers(require("hbl-object").default)
 }
 
 export function getProductPageBuildTasks(products: Product[]) {
