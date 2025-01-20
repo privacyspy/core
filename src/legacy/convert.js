@@ -4,7 +4,7 @@ const fs = require("fs");
 const database = JSON.parse(
   fs
     .readFileSync("src/legacy/legacy_database.json", "utf-8")
-    .replace(/[\x00-\x1F\x7F-\x9F]/g, "")
+    .replace(/[\x00-\x1F\x7F-\x9F]/g, "") // eslint-disable-line no-control-regex
 );
 
 let need_revision = new Set();
@@ -96,7 +96,7 @@ for (let entry of database) {
     contributors.add(contributor);
   }
 
-  if (true || !need_revision.has(policy["name"])) {
+  if (true || !need_revision.has(policy["name"])) { // eslint-disable-line no-constant-condition, no-constant-binary-expression
     fs.writeFileSync(
       "products/" + policy.slug + ".toml",
       toml.stringify(policy)
@@ -376,23 +376,6 @@ function convertAnswerToId(questionText, answerText) {
           return "yes";
         case "Only for critical data":
           return "critical-only";
-        default:
-          throw (
-            'Question "' +
-            questionText +
-            '" does not contain the answer "' +
-            answerText +
-            '"'
-          );
-      }
-    case "Is the policy's history made available?":
-      switch (answerText) {
-        case "No":
-          return "no";
-        case "Only the date it was last modified":
-          return "last-modified";
-        case "Yes, with revisions or a changelog":
-          return "yes";
         default:
           throw (
             'Question "' +
