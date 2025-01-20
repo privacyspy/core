@@ -7,10 +7,6 @@
     "test": "tests"
   },
   "dependencies": {
-    "@babel/core": "^7.26.0",
-    "@babel/helper-validator-option": "^7.25.9",
-    "@babel/preset-env": "^7.25.9",
-    "@babel/preset-typescript": "^7.25.9",
     "@fortawesome/fontawesome-free": "^5.15.1",
     "@fullhuman/postcss-purgecss": "^7.0.2",
     "@iarna/toml": "^2.2.5",
