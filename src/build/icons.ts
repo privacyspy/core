@@ -34,6 +34,7 @@ if (process.argv.length > 2) {
       console.log(
         "An error occurred while loading an icon for " + product.slug
       );
+      console.error(err);
     }
   }
 })();
@@ -69,6 +70,7 @@ async function getIcon(product: Product) {
       );
     } catch (err) {
       console.log("An error occured while fetching " + hostname);
+      console.error(err);
     }
   }
 
@@ -106,8 +108,8 @@ async function getIcon(product: Product) {
         wroteIcon = true;
       }
     } catch (err) {
-      console.log(err);
       console.log("An error occurred while trying to get an icon: " + err);
+      console.error(err);
     }
   }
   console.log(product.slug + ": " + potentialIcons.length + " potential icons");
