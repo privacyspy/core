@@ -21,7 +21,6 @@
     "autoprefixer": "^10.4.20",
     "gulp": "^5.0.0",
     "gulp-hb": "^8.0.0",
-    "gulp-jest": "^4.0.3",
     "gulp-postcss": "^10.0.0",
     "hbl-arrays": "^0.1.2",
     "hbl-cmark": "^0.1.2",
