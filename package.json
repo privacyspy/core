@@ -38,6 +38,7 @@
     "postcss-scss": "^4.0.9",
     "simple-git": "^3.27.0",
     "tailwindcss": "^2.1.2",
+    "through2": "^4.0.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.3"
   },

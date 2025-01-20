@@ -15,9 +15,9 @@ import {
 
 const gulp = require("gulp");
 const postcss = require("gulp-postcss");
-const rename = require("gulp-rename");
 const fs = require("node:fs");
 const path = require("node:path");
+const through = require("through2");
 
 const rubric: RubricQuestion[] = loadRubric();
 const contributors: Contributor[] = loadContributors();
@@ -71,7 +71,16 @@ gulp.task("build general pages", () => {
         "./src/templates/pages/directory.hbs",
       ],
     })
-    .pipe(rename({ extname: ".html" }))
+    .pipe(through.obj((file, _, cb) => { // change to .html extension
+      if (file.isBuffer()) {
+        const fp = path.format({
+          dir: path.dirname(file.path),
+          name: path.basename(file.path, ".hbs"),
+          ext: '.html'
+        })
+      }
+      cb(null, file);
+    }))
     .pipe(hbsFactory({ rubric, contributors, products }))
     .pipe(gulp.dest("./dist/"));
 });
@@ -114,7 +123,16 @@ gulp.task("build css", () => {
   return gulp
     .src(["./src/static/css/base.scss"])
     .pipe(postcss())
-    .pipe(rename({ extname: ".css" }))
+    .pipe(through.obj((file, _, cb) => { // change to .css extension
+      if (file.isBuffer()) {
+        const fp = path.format({
+          dir: path.dirname(file.path),
+          name: path.basename(file.path, ".scss"),
+          ext: '.css'
+        })
+      }
+      cb(null, file);
+    }))
     .pipe(gulp.dest("./dist/static/css/"));
 });
 
