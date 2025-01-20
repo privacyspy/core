@@ -1,5 +1,3 @@
-//require("dotenv").config();
-
 import { Product, RubricQuestion, Contributor } from "./src/parsing/types";
 
 import {
