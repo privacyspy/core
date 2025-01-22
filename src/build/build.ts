@@ -1,5 +1,5 @@
 import esbuild from "esbuild";
-import { build_scss } from "./src/build/css.ts";
+import { build_scss } from "./src/build/scss.ts";
 
 import fs from "node:fs";
 import path from "node:path";
