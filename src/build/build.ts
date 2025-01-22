@@ -1,6 +1,9 @@
 import esbuild from "esbuild";
 import { build_scss } from "./src/build/css.ts";
 
+import fs from "node:fs";
+import path from "node:path";
+
 // get task(s)
 if (process.argv.length == 1) { build_all(); }
 if (process.argv.length < 2) { process.exit(2); }
