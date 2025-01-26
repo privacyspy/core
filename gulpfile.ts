@@ -14,6 +14,7 @@ import {
 } from "./src/build/utils";
 
 const gulp = require("gulp");
+const postcss = require("gulp-postcss");
 const fs = require("node:fs");
 const path = require("node:path");
 const through = require("through2");
@@ -22,7 +23,7 @@ const rubric: RubricQuestion[] = loadRubric();
 const contributors: Contributor[] = loadContributors();
 const products: Product[] = loadProducts(rubric, contributors);
 
-gulp.task("clean", () => {
+gulp.task("clean", async () => {
   return fs.rmSync(path.join(__dirname, "dist"), {
     recursive: true,
     force: true,
@@ -94,11 +95,57 @@ gulp.task(
   )
 );
 
+gulp.task("collect dependencies", () => {
+  return gulp
+    .src(["./node_modules/lunr/lunr.min.js"])
+    .pipe(gulp.dest("./dist/static/deps/"));
+});
+
+gulp.task("collect static", () => {
+  return gulp
+    .src([
+      "./src/static/**/*",
+      "./node_modules/@fortawesome/fontawesome-free/**/*.{woff2,woff}",
+      "!./src/static/**/*.{css,scss}",
+    ])
+    .pipe(gulp.dest("./dist/static/"));
+});
+
+gulp.task("collect root favicon", () => {
+  return gulp.src(["./src/static/img/*.ico"]).pipe(gulp.dest("./dist/"));
+});
+
+gulp.task("collect product icons", () => {
+  return gulp.src(["./icons/**/*"]).pipe(gulp.dest("./dist/static/icons/"));
+});
+
+gulp.task("build css", async () => {
+  return gulp
+    .src(["./src/static/css/base.scss"])
+    .pipe(postcss())
+    .pipe(through.obj((file, _, cb) => { // change to .css extension
+      if (file.isBuffer()) {
+        const fp = path.format({
+          dir: path.dirname(file.path),
+          name: path.basename(file.path, ".scss"),
+          ext: '.css'
+        })
+      }
+      cb(null, file);
+    }))
+    .pipe(gulp.dest("./dist/static/css/"));
+});
+
 gulp.task(
   "default",
   gulp.series([
     "clean",
     "build pages",
+    "collect dependencies",
+    "collect static",
+    "collect product icons",
+    "collect root favicon",
+    "build css"
   ])
 );
 
