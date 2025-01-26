@@ -13,6 +13,8 @@ import {
   getExtensionAPI,
 } from "./src/build/utils";
 
+import * as purgecss from "@fullhuman/postcss-purgecss";
+
 const gulp = require("gulp");
 const postcss = require("gulp-postcss");
 const fs = require("node:fs");
@@ -73,11 +75,7 @@ gulp.task("build general pages", () => {
     })
     .pipe(through.obj((file, _, cb) => { // change to .html extension
       if (file.isBuffer()) {
-        const fp = path.format({
-          dir: path.dirname(file.path),
-          name: path.basename(file.path, ".hbs"),
-          ext: '.html'
-        })
+        file.path = file.path.replace(".hbs", ".html")
       }
       cb(null, file);
     }))
@@ -120,19 +118,30 @@ gulp.task("collect product icons", () => {
 });
 
 gulp.task("build css", async () => {
+  const purgecssConf = purgecss.default({
+    content: ["./src/**/*.hbs", "./src/**/*.js", "./src/**/*.ts", "./gulpfile.ts"],
+    defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
+  });
+  const plugins = [
+    require("postcss-import"),
+    require("tailwindcss")("tailwind.config.js"),
+    require("autoprefixer"),
+    ...(process.env.NODE_ENV === "production" ? [purgecssConf] : []),
+  ];
+
   return gulp
     .src(["./src/static/css/base.scss"])
-    .pipe(postcss())
+    .pipe(postcss(plugins, {
+      syntax: require("postcss-scss")
+    }))
+    .on("error", (err) => console.error(err))
     .pipe(through.obj((file, _, cb) => { // change to .css extension
       if (file.isBuffer()) {
-        const fp = path.format({
-          dir: path.dirname(file.path),
-          name: path.basename(file.path, ".scss"),
-          ext: '.css'
-        })
+        file.path = file.path.replace(".scss", ".css")
       }
       cb(null, file);
     }))
+    .on("error", (err) => console.error(err))
     .pipe(gulp.dest("./dist/static/css/"));
 });
 
