@@ -22,8 +22,8 @@ const rubric: RubricQuestion[] = loadRubric();
 const contributors: Contributor[] = loadContributors();
 const products: Product[] = loadProducts(rubric, contributors);
 
-gulp.task("clean", async () => {
-  return await fs.rm(path.join(__dirname, "dist"), {
+gulp.task("clean", () => {
+  return fs.rmSync(path.join(__dirname, "dist"), {
     recursive: true,
     force: true,
   });
