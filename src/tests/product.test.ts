@@ -1,6 +1,7 @@
 import { loadRubric, loadProducts, loadContributors } from "../parsing/index";
 import { Product, RubricQuestion } from "../parsing/types";
 import { isMinFullSentence } from "./utils";
+import { expect, test } from '@jest/globals';
 import fs from "fs";
 
 const sizeOf = require("image-size");
