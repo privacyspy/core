@@ -1,5 +1,3 @@
-require("dotenv").config();
-
 import { Product, RubricQuestion, Contributor } from "./src/parsing/types";
 
 import {
@@ -15,18 +13,23 @@ import {
   getExtensionAPI,
 } from "./src/build/utils";
 
+import * as purgecss from "@fullhuman/postcss-purgecss";
+
 const gulp = require("gulp");
 const postcss = require("gulp-postcss");
-const rename = require("gulp-rename");
-const del = require("del");
-const fs = require("fs");
+const fs = require("node:fs");
+const path = require("node:path");
+const through = require("through2");
 
 const rubric: RubricQuestion[] = loadRubric();
 const contributors: Contributor[] = loadContributors();
 const products: Product[] = loadProducts(rubric, contributors);
 
-gulp.task("clean", () => {
-  return del("./dist/**/*");
+gulp.task("clean", async () => {
+  return fs.rmSync(path.join(__dirname, "dist"), {
+    recursive: true,
+    force: true,
+  });
 });
 
 gulp.task("build api", async () => {
@@ -70,7 +73,12 @@ gulp.task("build general pages", () => {
         "./src/templates/pages/directory.hbs",
       ],
     })
-    .pipe(rename({ extname: ".html" }))
+    .pipe(through.obj((file, _, cb) => { // change to .html extension
+      if (file.isBuffer()) {
+        file.path = file.path.replace(".hbs", ".html")
+      }
+      cb(null, file);
+    }))
     .pipe(hbsFactory({ rubric, contributors, products }))
     .pipe(gulp.dest("./dist/"));
 });
@@ -109,11 +117,31 @@ gulp.task("collect product icons", () => {
   return gulp.src(["./icons/**/*"]).pipe(gulp.dest("./dist/static/icons/"));
 });
 
-gulp.task("build css", () => {
+gulp.task("build css", async () => {
+  const purgecssConf = purgecss.default({
+    content: ["./src/**/*.hbs", "./src/**/*.js", "./src/**/*.ts", "./gulpfile.ts"],
+    defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
+  });
+  const plugins = [
+    require("postcss-import"),
+    require("tailwindcss")("tailwind.config.js"),
+    require("autoprefixer"),
+    ...(process.env.NODE_ENV === "production" ? [purgecssConf] : []),
+  ];
+
   return gulp
     .src(["./src/static/css/base.scss"])
-    .pipe(postcss())
-    .pipe(rename({ extname: ".css" }))
+    .pipe(postcss(plugins, {
+      syntax: require("postcss-scss")
+    }))
+    .on("error", (err) => console.error(err))
+    .pipe(through.obj((file, _, cb) => { // change to .css extension
+      if (file.isBuffer()) {
+        file.path = file.path.replace(".scss", ".css")
+      }
+      cb(null, file);
+    }))
+    .on("error", (err) => console.error(err))
     .pipe(gulp.dest("./dist/static/css/"));
 });
 
@@ -126,7 +154,7 @@ gulp.task(
     "collect static",
     "collect product icons",
     "collect root favicon",
-    "build css",
+    "build css"
   ])
 );
 

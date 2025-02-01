@@ -1,5 +1,4 @@
-import fs from "fs";
-import { Product, RubricQuestion, RubricOption } from "../parsing/types";
+import { RubricQuestion, RubricOption } from "../parsing/types";
 
 export function getQuestionBySlug(
   questions: RubricQuestion[],

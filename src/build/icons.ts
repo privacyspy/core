@@ -34,6 +34,7 @@ if (process.argv.length > 2) {
       console.log(
         "An error occurred while loading an icon for " + product.slug
       );
+      console.error(err);
     }
   }
 })();
@@ -43,7 +44,7 @@ async function getIcon(product: Product) {
   for (const hostname of product.hostnames) {
     try {
       const homeUrl = "http://" + hostname;
-      const response = await axios.get(homeUrl, { timeout: 10 });
+      const response = await axios.get(homeUrl, { timeout: 10000 });
       const soup = new JSSoup(response.data);
       for (const link of soup.findAll("link")) {
         if (
@@ -69,6 +70,7 @@ async function getIcon(product: Product) {
       );
     } catch (err) {
       console.log("An error occured while fetching " + hostname);
+      console.error(err);
     }
   }
 
@@ -89,7 +91,7 @@ async function getIcon(product: Product) {
       const icon = await axios
         .get(iconUrl, {
           responseType: "arraybuffer",
-          timeout: 10,
+          timeout: 10000,
         })
         .then((response) => Buffer.from(response.data, "binary"));
       const dimensions = sizeOf(icon);
@@ -106,8 +108,8 @@ async function getIcon(product: Product) {
         wroteIcon = true;
       }
     } catch (err) {
-      console.log(err);
       console.log("An error occurred while trying to get an icon: " + err);
+      console.error(err);
     }
   }
   console.log(product.slug + ": " + potentialIcons.length + " potential icons");

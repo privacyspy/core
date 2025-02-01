@@ -5,7 +5,7 @@ permissions:
   pull-requests: write
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
     - uses: actions/checkout@v4
     - name: Configure git
@@ -13,20 +13,11 @@ jobs:
         # Setup for commiting using built-in token. See https://github.com/actions/checkout#push-a-commit-using-the-built-in-token
         git config user.name "github-actions[bot]"
         git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-    - name: Cache node modules
-      uses: actions/cache@v2
-      env:
-        cache-name: cache-node-modules
-      with:
-        path: ~/.npm
-        key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: |
-          ${{ runner.os }}-build-${{ env.cache-name }}-
-          ${{ runner.os }}-build-
-          ${{ runner.os }}-
-    - uses: actions/setup-node@v1
+    - name: "Install Node 22 and cache NPM packages"
+      uses: actions/setup-node@v4
       with:
         node-version: '22'
+        cache: 'npm'
     - run: npm install
     - name: Update Browserslist database and create PR if applies
       uses: c2corg/browserslist-update-action@v2.4.0

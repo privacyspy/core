@@ -6,11 +6,11 @@ import {
 } from "../parsing/types";
 import { loadRubric } from "../parsing/index";
 
-const gulp = require("gulp");
-const rename = require("gulp-rename");
-const hb = require("gulp-hb");
-const hbHelpers = require("handlebars-helpers");
+const path = require("node:path");
 
+const gulp = require("gulp");
+const hb = require("gulp-hb");
+const through = require("through2");
 const PAGE_NUMBER_PADDING = 3; // i.e.: *1* 2 3 ... 8
 
 export function hbsFactory(data: object = {}) {
@@ -29,7 +29,13 @@ export function hbsFactory(data: object = {}) {
       }),
       ...data,
     })
-    .helpers(hbHelpers())
+    .helpers(require("hbl-arrays"))
+    .helpers(require("hbl-cmark"))
+    .helpers(require("hbl-comparison"))
+    .helpers(require("hbl-maths"))
+    .helpers(require("hbl-object"))
+    .helpers(require("hbl-strings"))
+    .helpers(require("hbl-urls"))
     .helpers({
       ratioColorClass,
       getMonth,
@@ -53,7 +59,13 @@ export function getProductPageBuildTasks(products: Product[]) {
             description: `${product.name} has a score of ${product.score}/10 on PrivacySpy, an open project to rate and annotate privacy policies.`,
           })
         )
-        .pipe(rename(`/product/${product.slug}/index.html`))
+        .pipe(through.obj((file, _, cb) => {
+          if (file.isBuffer()) {
+            const fp = path.join('product', product.slug, 'index.html');
+            file.path = fp;
+          }
+          cb(null, file);
+        }))
         .pipe(gulp.dest("./dist/"));
     });
     productPageBuildTasks.push(taskName);
@@ -85,7 +97,13 @@ export function getDirectoryPagesTasks(products: Product[]) {
             })
           )
           // the first page is directory, the second page is directory/2
-          .pipe(rename(`/directory/${i == 0 ? "" : i + 1 + "/"}index.html`))
+          .pipe(through.obj((file, _, cb) => {
+            if (file.isBuffer()) {
+              const fp = path.join('directory', (i == 0 ? "" : i + 1 + "/"), 'index.html');
+              file.path = fp;
+            }
+            cb(null, file);
+          }))
           .pipe(gulp.dest("./dist/"))
       );
     });

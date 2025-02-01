@@ -1,5 +1,6 @@
 import fs from "fs";
 import toml from "@iarna/toml";
+import { expect, test } from '@jest/globals';
 
 import { loadRubric, loadProducts, loadContributors } from "../parsing";
 
@@ -27,7 +28,7 @@ for (const file of files) {
             encoding: "utf-8",
           })
         );
-      }).not.toThrowError();
+      }).not.toThrow();
     });
   });
 }
@@ -35,17 +36,17 @@ for (const file of files) {
 test("Rubric must parse correctly", () => {
   expect(() => {
     loadRubric();
-  }).not.toThrowError();
+  }).not.toThrow();
 });
 
 test("Contributors must parse correctly", () => {
   expect(() => {
     loadContributors();
-  }).not.toThrowError();
+  }).not.toThrow();
 });
 
 test("Products must parse correctly", () => {
   expect(() => {
     loadProducts(loadRubric(), loadContributors());
-  }).not.toThrowError();
+  }).not.toThrow();
 });
